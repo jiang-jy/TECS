@@ -1,0 +1,17 @@
+signature sElectricallyOperatedShade {
+    void setOpenCloseSetting_Open( );
+    void setOpenCloseSetting_Close( );
+    void getOpenCloseSetting_Open( );
+    void getOpenCloseSetting_Close( );
+    void setOperatingStatus_ON( );
+    void getOperatingStatus_ON( );
+    void setOperatingStatus_OFF( );
+    void getOperatingStatus_OFF( );
+    void setFaultStatus_Fault( );
+    void getFaultStatus_Fault( );
+    void setFaultStatus_NoFault( );
+    void getFaultStatus_NoFault( );
+};
+celltype tElectricallyOperatedShade {
+    entry sElectricallyOperatedShade eElectricallyOperatedShade;
+};

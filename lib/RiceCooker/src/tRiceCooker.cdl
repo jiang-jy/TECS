@@ -1,0 +1,5 @@
+signature sRiceCooker {
+    void getRiceCookingStatus_Stop( );
+    void getRiceCookingStatus_Preheating( );
+    void getRiceCookingStatus_RiceCooking( );
+    void getRiceCookingStatus_Steaming( );

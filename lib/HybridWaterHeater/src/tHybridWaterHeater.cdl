@@ -1,0 +1,21 @@
+signature sHybridWaterHeater {
+    void setLinkageModeSettingForSolarPowerGeneration_ModeOff( );
+    void setLinkageModeSettingForSolarPowerGeneration_HouseholdConsumption( );
+    void setLinkageModeSettingForSolarPowerGeneration_PrioritizingElectricitySales( );
+    void setLinkageModeSettingForSolarPowerGeneration_EconomicEfficiency( );
+    void getLinkageModeSettingForSolarPowerGeneration_ModeOff( );
+    void getLinkageModeSettingForSolarPowerGeneration_HouseholdConsumption( );
+    void getLinkageModeSettingForSolarPowerGeneration_PrioritizingElectricitySales( );
+    void getLinkageModeSettingForSolarPowerGeneration_EconomicEfficiency( );
+    void setOperatingStatus_ON( );
+    void getOperatingStatus_ON( );
+    void setOperatingStatus_OFF( );
+    void getOperatingStatus_OFF( );
+    void setFaultStatus_Fault( );
+    void getFaultStatus_Fault( );
+    void setFaultStatus_NoFault( );
+    void getFaultStatus_NoFault( );
+};
+celltype tHybridWaterHeater {
+    entry sHybridWaterHeater eHybridWaterHeater;
+};

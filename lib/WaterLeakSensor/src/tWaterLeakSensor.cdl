@@ -1,0 +1,15 @@
+signature sWaterLeakSensor {
+    void getWaterLeakDetectionStatus_Yes( );
+    void getWaterLeakDetectionStatus_No( );
+    void setOperatingStatus_ON( );
+    void getOperatingStatus_ON( );
+    void setOperatingStatus_OFF( );
+    void getOperatingStatus_OFF( );
+    void setFaultStatus_Fault( );
+    void getFaultStatus_Fault( );
+    void setFaultStatus_NoFault( );
+    void getFaultStatus_NoFault( );
+};
+celltype tWaterLeakSensor {
+    entry sWaterLeakSensor eWaterLeakSensor;
+};

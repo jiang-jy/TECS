@@ -1,0 +1,33 @@
+signature sHomeAirConditioner {
+    void setPowerSavingOperationSetting_On( );
+    void setPowerSavingOperationSetting_Off( );
+    void getPowerSavingOperationSetting_On( );
+    void getPowerSavingOperationSetting_Off( );
+    void setOperationModeSetting_Automatic( );
+    void setOperationModeSetting_Cooling( );
+    void setOperationModeSetting_Heating( );
+    void setOperationModeSetting_Dehumidification( );
+    void setOperationModeSetting_AirCirculation( );
+    void setOperationModeSetting_Other( );
+    void getOperationModeSetting_Automatic( );
+    void getOperationModeSetting_Cooling( );
+    void getOperationModeSetting_Heating( );
+    void getOperationModeSetting_Dehumidification( );
+    void getOperationModeSetting_AirCirculation( );
+    void getOperationModeSetting_Other( );
+    void setSetTemperatureValue( );
+    void setSetTemperatureValue_Undefined( );
+    void getSetTemperatureValue( );
+    void getSetTemperatureValue_Undefined( );
+    void setOperatingStatus_ON( );
+    void getOperatingStatus_ON( );
+    void setOperatingStatus_OFF( );
+    void getOperatingStatus_OFF( );
+    void setFaultStatus_Fault( );
+    void getFaultStatus_Fault( );
+    void setFaultStatus_NoFault( );
+    void getFaultStatus_NoFault( );
+};
+celltype tHomeAirConditioner {
+    entry sHomeAirConditioner eHomeAirConditioner;
+};

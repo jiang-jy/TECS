@@ -1,0 +1,17 @@
+signature sSuperClass {
+    void getOperationStatus_On( );
+    void getOperationStatus_Off( );
+    void getFaultStatus_Fault( );
+    void getFaultStatus_NoFault( );
+    void setOperatingStatus_ON( );
+    void getOperatingStatus_ON( );
+    void setOperatingStatus_OFF( );
+    void getOperatingStatus_OFF( );
+    void setFaultStatus_Fault( );
+    void getFaultStatus_Fault( );
+    void setFaultStatus_NoFault( );
+    void getFaultStatus_NoFault( );
+};
+celltype tSuperClass {
+    entry sSuperClass eSuperClass;
+};

@@ -1,0 +1,19 @@
+signature sFuelCell {
+    void getMeasuredInstantaneousPowerGenerationOutput( );
+    void getMeasuredCumulativePowerGenerationOutput( );
+    void setDesignatedPowerGenerationStatus_PowerGenerationAtTheMax.Rating( );
+    void setDesignatedPowerGenerationStatus_LoadFollowingPowerGeneration( );
+    void getDesignatedPowerGenerationStatus_PowerGenerationAtTheMax.Rating( );
+    void getDesignatedPowerGenerationStatus_LoadFollowingPowerGeneration( );
+    void setOperatingStatus_ON( );
+    void getOperatingStatus_ON( );
+    void setOperatingStatus_OFF( );
+    void getOperatingStatus_OFF( );
+    void setFaultStatus_Fault( );
+    void getFaultStatus_Fault( );
+    void setFaultStatus_NoFault( );
+    void getFaultStatus_NoFault( );
+};
+celltype tFuelCell {
+    entry sFuelCell eFuelCell;
+};

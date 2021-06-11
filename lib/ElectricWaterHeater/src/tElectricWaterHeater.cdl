@@ -1,0 +1,28 @@
+signature sElectricWaterHeater {
+    void getHotWaterSupplyStatus_Yes( );
+    void getHotWaterSupplyStatus_No( );
+    void setParticipationInEnergyShift_Participation( );
+    void setParticipationInEnergyShift_NonParticipation( );
+    void getParticipationInEnergyShift_Participation( );
+    void getParticipationInEnergyShift_NonParticipation( );
+    void getNumberOfEnergyShifts( );
+    void setDaytimeHeatingShiftTime1( );
+    void getDaytimeHeatingShiftTime1( );
+    void setDaytimeHeatingShiftTime2( );
+    void getDaytimeHeatingShiftTime2( );
+    void setAutomaticBathWaterHeatingModeSetting_On( );
+    void setAutomaticBathWaterHeatingModeSetting_Off( );
+    void getAutomaticBathWaterHeatingModeSetting_On( );
+    void getAutomaticBathWaterHeatingModeSetting_Off( );
+    void setOperatingStatus_ON( );
+    void getOperatingStatus_ON( );
+    void setOperatingStatus_OFF( );
+    void getOperatingStatus_OFF( );
+    void setFaultStatus_Fault( );
+    void getFaultStatus_Fault( );
+    void setFaultStatus_NoFault( );
+    void getFaultStatus_NoFault( );
+};
+celltype tElectricWaterHeater {
+    entry sElectricWaterHeater eElectricWaterHeater;
+};

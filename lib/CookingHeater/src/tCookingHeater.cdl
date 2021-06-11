@@ -1,0 +1,14 @@
+signature sCookingHeater {
+    void setAllStopSetting_StopAllHeating( );
+    void setOperatingStatus_ON( );
+    void getOperatingStatus_ON( );
+    void setOperatingStatus_OFF( );
+    void getOperatingStatus_OFF( );
+    void setFaultStatus_Fault( );
+    void getFaultStatus_Fault( );
+    void setFaultStatus_NoFault( );
+    void getFaultStatus_NoFault( );
+};
+celltype tCookingHeater {
+    entry sCookingHeater eCookingHeater;
+};

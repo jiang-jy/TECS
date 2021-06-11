@@ -1,0 +1,16 @@
+signature sNodeProfile {
+    void getOperatingStatus_On( );
+    void getOperatingStatus_Off( );
+    void getNumberOfSelfNodeClasses( );
+    void setOperatingStatus_ON( );
+    void getOperatingStatus_ON( );
+    void setOperatingStatus_OFF( );
+    void getOperatingStatus_OFF( );
+    void setFaultStatus_Fault( );
+    void getFaultStatus_Fault( );
+    void setFaultStatus_NoFault( );
+    void getFaultStatus_NoFault( );
+};
+celltype tNodeProfile {
+    entry sNodeProfile eNodeProfile;
+};

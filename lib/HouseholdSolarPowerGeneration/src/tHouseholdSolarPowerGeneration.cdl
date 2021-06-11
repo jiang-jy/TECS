@@ -1,0 +1,29 @@
+signature sHouseholdSolarPowerGeneration {
+    void setFitContractType_Fit( );
+    void setFitContractType_NonFit( );
+    void setFitContractType_NoSetting( );
+    void getFitContractType_Fit( );
+    void getFitContractType_NonFit( );
+    void getFitContractType_NoSetting( );
+    void getSelfConsumptionType_WithSelfConsumption( );
+    void getSelfConsumptionType_WithoutSelfConsumption( );
+    void getSelfConsumptionType_Unknown( );
+    void getOutputPowerRestraintStatus_OngoingRestraint(outputPowerControl)( );
+    void getOutputPowerRestraintStatus_OngoingRestraint(exceptOutputPowerControl)( );
+    void getOutputPowerRestraintStatus_OngoingRestraint(reasonForRestraintIsUnknown)( );
+    void getOutputPowerRestraintStatus_NotRestraining( );
+    void getOutputPowerRestraintStatus_Unknown( );
+    void getMeasuredInstantaneousAmountOfElectricityGenerated( );
+    void getMeasuredCumulativeAmountOfElectricEnergyGenerated( );
+    void setOperatingStatus_ON( );
+    void getOperatingStatus_ON( );
+    void setOperatingStatus_OFF( );
+    void getOperatingStatus_OFF( );
+    void setFaultStatus_Fault( );
+    void getFaultStatus_Fault( );
+    void setFaultStatus_NoFault( );
+    void getFaultStatus_NoFault( );
+};
+celltype tHouseholdSolarPowerGeneration {
+    entry sHouseholdSolarPowerGeneration eHouseholdSolarPowerGeneration;
+};

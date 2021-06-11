@@ -1,0 +1,15 @@
+signature sFirstAidSensor {
+    void getFirstAidOccurrenceStatus_Yes( );
+    void getFirstAidOccurrenceStatus_No( );
+    void setOperatingStatus_ON( );
+    void getOperatingStatus_ON( );
+    void setOperatingStatus_OFF( );
+    void getOperatingStatus_OFF( );
+    void setFaultStatus_Fault( );
+    void getFaultStatus_Fault( );
+    void setFaultStatus_NoFault( );
+    void getFaultStatus_NoFault( );
+};
+celltype tFirstAidSensor {
+    entry sFirstAidSensor eFirstAidSensor;
+};

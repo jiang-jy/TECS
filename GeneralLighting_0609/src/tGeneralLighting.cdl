@@ -1,0 +1,14 @@
+signature sGeneralLighting {
+    void setLightingModeSetting_Automatic( );
+    void setLightingModeSetting_NormalLighting( );
+    void setLightingModeSetting_NightLighting( );
+    void setLightingModeSetting_ColorLighting( );
+    void getLightingModeSetting_Automatic( );
+    void getLightingModeSetting_NormalLighting( );
+    void getLightingModeSetting_NightLighting( );
+    void getLightingModeSetting_ColorLighting( );
+};
+
+celltype tGeneralLighting{
+	entry sGeneralLighting eGeneralLighting;
+};

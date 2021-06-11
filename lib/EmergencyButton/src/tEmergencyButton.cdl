@@ -1,0 +1,15 @@
+signature sEmergencyButton {
+    void getEmergencyOccurrenceStatus_Yes( );
+    void getEmergencyOccurrenceStatus_No( );
+    void setOperatingStatus_ON( );
+    void getOperatingStatus_ON( );
+    void setOperatingStatus_OFF( );
+    void getOperatingStatus_OFF( );
+    void setFaultStatus_Fault( );
+    void getFaultStatus_Fault( );
+    void setFaultStatus_NoFault( );
+    void getFaultStatus_NoFault( );
+};
+celltype tEmergencyButton {
+    entry sEmergencyButton eEmergencyButton;
+};

@@ -1,0 +1,21 @@
+signature sElectricallyOperatedBlindShade {
+    void setOpenClose(extensionRetraction)Setting_Open( );
+    void setOpenClose(extensionRetraction)Setting_Close( );
+    void setOpenClose(extensionRetraction)Setting_Stop( );
+    void getOpenClose(extensionRetraction)Setting_Open( );
+    void getOpenClose(extensionRetraction)Setting_Close( );
+    void getOpenClose(extensionRetraction)Setting_Stop( );
+    void setDegreeOfOpeningLevel( );
+    void getDegreeOfOpeningLevel( );
+    void setOperatingStatus_ON( );
+    void getOperatingStatus_ON( );
+    void setOperatingStatus_OFF( );
+    void getOperatingStatus_OFF( );
+    void setFaultStatus_Fault( );
+    void getFaultStatus_Fault( );
+    void setFaultStatus_NoFault( );
+    void getFaultStatus_NoFault( );
+};
+celltype tElectricallyOperatedBlindShade {
+    entry sElectricallyOperatedBlindShade eElectricallyOperatedBlindShade;
+};

@@ -1,0 +1,300 @@
+{
+:apiDefinition{/I"INCLUDE:ET{:
+PARAM[{:	NAME:	file:STRINGTI"TCP_CRE_REP;T{
+:APINAMEI"TCP_CRE_REP;T:API@:
+PHASE:
+tcpip:KEYPARI"tcp4_repid;T;[{;@:ID_DEFT{:
+BRACEI"{;T{;I"tcp4_repatr;T:EXPTYPEI"unsigned_t;T{;I"{;T{;I"ipv4addr;T{;I"portno;T{;I"};T{;I"};TI"TCP6_CRE_REP;T{
+;I"TCP6_CRE_REP;T;@";;;I"tcp6_repid;T;[{;@#;T{;I"{;T{;I"tcp6_repatr;T;I"unsigned_t;T{;I"{;T{;I"ipv6addr;T{;I"portno;T{;I"};T{;I"};TI"TCP_CRE_CEP;T{
+;I"TCP_CRE_CEP;T;@7;;;I"tcp4_cepid;T;[{;@8;T{;I"{;T{;I"tcp4_cepatr;T;I"unsigned_t;T{;I"	sbuf;T{;I"sbufsz;T{;I"	rbuf;T{;I"rbufsz;T{;I"callback;T{;I"};TI"TCP6_CRE_CEP;T{
+;I"TCP6_CRE_CEP;T;@N;;;I"tcp6_cepid;T;[{;@O;T{;I"{;T{;I"tcp6_cepatr;T;I"unsigned_t;T{;I"	sbuf;T{;I"sbufsz;T{;I"	rbuf;T{;I"rbufsz;T{;I"callback;T{;I"};TI"UDP_CRE_CEP;T{
+;I"UDP_CRE_CEP;T;@e;;;I"udp4_cepid;T;[{;@f;T{;I"{;T{;I"udp4_cepatr;T;I"unsigned_t;T{;I"{;T{;I"ipv4addr;T{;I"portno;T{;I"};T{;I"callback;T{;I"};TI"UDP6_CRE_CEP;T{
+;I"UDP6_CRE_CEP;T;@|;;;I"udp6_cepid;T;[{;@};T{;I"{;T{;I"udp6_cepatr;T;I"unsigned_t;T{;I"{;T{;I"ipv6addr;T{;I"portno;T{;I"};T{;I"callback;T{;I"};TI"VRID_TCP_REP;T{
+;I"VRID_TCP_REP;T;@é;;;I"vrid_tcp4_repid;T;[{;@è;TI"VRID_TCP_CEP;T{
+;I"VRID_TCP_CEP;T;@î;;;I"vrid_tcp4_cepid;T;[{;@ï;TI"VRID_TCP6_REP;T{
+;I"VRID_TCP6_REP;T;@ö;;;I"vrid_tcp6_repid;T;[{;@õ;TI"VRID_TCP6_CEP;T{
+;I"VRID_TCP6_CEP;T;@†;;;I"vrid_tcp6_cepid;T;[{;@°;TI"VRID_UDP_CEP;T{
+;I"VRID_UDP_CEP;T;@¶;;;I"vrid_udp4_cepid;T;[{;@ß;TI"VRID_UDP6_CEP;T{
+;I"VRID_UDP6_CEP;T;@¨;;;I"vrid_udp6_cepid;T;[{;@≠;TI"ECN_CRE_EOBJ;T{
+;I"ECN_CRE_EOBJ;T;@≤;:echonet;I"eobjid;T;[{;@≥;T{;I"{;T{;I"eobjatr;T;I"unsigned_t;T{;I"enodid;T{;I"
+exinf;T{;I"
+eojx1;T;I"unsigned_t;T{;I"
+eojx2;T;I"unsigned_t;T{;I"
+eojx3;T;I"unsigned_t;T{;I"};TI"ECN_DEF_EPRP;T{	;I"ECN_DEF_EPRP;T;@Ã;;;[{;I"eobjid;T{;I"{;T{;I"eprpcd;T;I"unsigned_t;T{;I"eprpatr;T;I"unsigned_t;T{;I"eprpsz;T;I"unsigned_t;T{;I"
+exinf;T{;I"eprpset;T{;I"eprpget;T{;I"};TI"CRE_TSK;T{
+;I"CRE_TSK;T;@Â;:kernel;I"
+tskid;T;[{;@Ê;T{;I"{;T{;I"tskatr;T;I"unsigned_t;T{;I"
+exinf;T{;I"	task;T{;I"itskpri;T;I"signed_t;T:SIGNEDT{;I"
+stksz;T;I"unsigned_t;T{;I"stk;T:OPTIONALT{;I"};TI"AID_TSK;T{	;I"AID_TSK;T;@˛;;;[{;I"
+notsk;T;I"unsigned_t;TI"CRE_SEM;T{
+;I"CRE_SEM;T;@;;;I"
+semid;T;[{;@;T{;I"{;T{;I"sematr;T;I"unsigned_t;T{;I"isemcnt;T;I"unsigned_t;T{;I"maxsem;T;I"unsigned_t;T{;I"};TI"AID_SEM;T{	;I"AID_SEM;T;@;;;[{;I"
+nosem;T;I"unsigned_t;TI"CRE_FLG;T{
+;I"CRE_FLG;T;@;;;I"
+flgid;T;[
+{;@ ;T{;I"{;T{;I"flgatr;T;I"unsigned_t;T{;I"iflgptn;T;I"unsigned_t;T{;I"};TI"AID_FLG;T{	;I"AID_FLG;T;@/;;;[{;I"
+noflg;T;I"unsigned_t;TI"CRE_DTQ;T{
+;I"CRE_DTQ;T;@6;;;I"
+dtqid;T;[{;@7;T{;I"{;T{;I"dtqatr;T;I"unsigned_t;T{;I"dtqcnt;T;I"unsigned_t;T{;I"
+dtqmb;T;T{;I"};TI"AID_DTQ;T{	;I"AID_DTQ;T;@H;;;[{;I"
+nodtq;T;I"unsigned_t;TI"CRE_PDQ;T{
+;I"CRE_PDQ;T;@O;;;I"
+pdqid;T;[{;@P;T{;I"{;T{;I"pdqatr;T;I"unsigned_t;T{;I"pdqcnt;T;I"unsigned_t;T{;I"maxdpri;T;I"signed_t;T;T{;I"
+pdqmb;T;T{;I"};TI"AID_PDQ;T{	;I"AID_PDQ;T;@d;;;[{;I"
+nopdq;T;I"unsigned_t;TI"CRE_MTX;T{
+;I"CRE_MTX;T;@k;;;I"
+mtxid;T;[
+{;@l;T{;I"{;T{;I"mtxatr;T;I"unsigned_t;T{	;I"ceilpri;T;I"signed_t;T;T;T{;I"};TI"AID_MTX;T{	;I"AID_MTX;T;@{;;;[{;I"
+nomtx;T;I"unsigned_t;TI"CRE_MPF;T{
+;I"CRE_MPF;T;@Ç;;;I"
+mpfid;T;[{;@É;T{;I"{;T{;I"mpfatr;T;I"unsigned_t;T{;I"blkcnt;T;I"unsigned_t;T{;I"
+blksz;T;I"unsigned_t;T{;I"mpf;T;T{;I"
+mpfmb;T;T{;I"};TI"AID_MPF;T{	;I"AID_MPF;T;@ô;;;[{;I"
+nompf;T;I"unsigned_t;TI"CRE_CYC;T{
+;I"CRE_CYC;T;@†;;;I"
+cycid;T;[{;@°;T{;I"{;T{;I"cycatr;T;I"unsigned_t;T{;I"{;T{;I"nfymode;T;I"unsigned_t;T{;I"	par1;T{;I"	par2;T;T{;I"	par3;T;T{;I"	par4;T;T{;I"};T{;I"cyctim;T;I"unsigned_t;T{;I"cycphs;T;I"unsigned_t;T{;I"};TI"AID_CYC;T{	;I"AID_CYC;T;@¬;;;[{;I"
+nocyc;T;I"unsigned_t;TI"CRE_ALM;T{
+;I"CRE_ALM;T;@…;;;I"
+almid;T;[{;@ ;T{;I"{;T{;I"almatr;T;I"unsigned_t;T{;I"{;T{;I"nfymode;T;I"unsigned_t;T{;I"	par1;T{;I"	par2;T;T{;I"	par3;T;T{;I"	par4;T;T{;I"};T{;I"};TI"AID_ALM;T{	;I"AID_ALM;T;@Â;;;[{;I"
+noalm;T;I"unsigned_t;TI"CFG_INT;T{
+;I"CFG_INT;T;@Ï;;;I"
+intno;T;[
+{;@Ì;I"unsigned_t;T{;I"{;T{;I"intatr;T;I"unsigned_t;T{;I"intpri;T;I"signed_t;T;T{;I"};TI"CRE_ISR;T{
+;I"CRE_ISR;T;@˝;;;I"
+isrid;T;[{;@˛;T{;I"{;T{;I"isratr;T;I"unsigned_t;T{;I"
+exinf;T{;I"
+intno;T;I"unsigned_t;T{;I"isr;T{;I"isrpri;T;I"signed_t;T;T{;I"};TI"AID_ISR;T{	;I"AID_ISR;T;@;;;[{;I"
+noisr;T;I"unsigned_t;TI"DEF_INH;T{
+;I"DEF_INH;T;@;;;I"
+inhno;T;[
+{;@;I"unsigned_t;T{;I"{;T{;I"inhatr;T;I"unsigned_t;T{;I"inthdr;T{;I"};TI"DEF_EXC;T{
+;I"DEF_EXC;T;@+;;;I"
+excno;T;[
+{;@,;I"unsigned_t;T{;I"{;T{;I"excatr;T;I"unsigned_t;T{;I"exchdr;T{;I"};TI"DEF_ICS;T{	;I"DEF_ICS;T;@;;;;[	{;I"{;T{;I"istksz;T;I"unsigned_t;T{;I"	istk;T;T{;I"};TI"DEF_KMM;T{	;I"DEF_KMM;T;@H;;;[	{;I"{;T{;I"
+kmmsz;T;I"unsigned_t;T{;I"kmm;T;T{;I"};TI"ATT_INI;T{	;I"ATT_INI;T;@U;;;[
+{;I"{;T{;I"iniatr;T;I"unsigned_t;T{;I"
+exinf;T{;I"inirtn;T{;I"};TI"ATT_TER;T{	;I"ATT_TER;T;@d;;;[
+{;I"{;T{;I"teratr;T;I"unsigned_t;T{;I"
+exinf;T{;I"terrtn;T{;I"};T:symbolValueTable{I"CHAR_BIT;T{:	EXPRI"CHAR_BIT;TI"SCHAR_MAX;T{;I"SCHAR_MAX;T;TI"SCHAR_MIN;T{;I"SCHAR_MIN;T;TI"UCHAR_MAX;T{;I"UCHAR_MAX;TI"CHAR_MAX;T{;I"CHAR_MAX;T;TI"CHAR_MIN;T{;I"CHAR_MIN;T;TI"SHRT_MAX;T{;I"SHRT_MAX;T;TI"SHRT_MIN;T{;I"SHRT_MIN;T;TI"USHRT_MAX;T{;I"USHRT_MAX;TI"INT_MAX;T{;I"INT_MAX;T;TI"INT_MIN;T{;I"INT_MIN;T;TI"UINT_MAX;T{;I"UINT_MAX;TI"LONG_MAX;T{;I"LONG_MAX;T;TI"LONG_MIN;T{;I"LONG_MIN;T;TI"ULONG_MAX;T{;I"ULONG_MAX;TI"TA_HLNG;T{;I"TA_HLNG;TI"TA_TFIFO;T{;I"TA_TFIFO;TI"TA_WSGL;T{;I"TA_WSGL;TI"NUM_IPV4ADDR_STR_BUFF;T{;I"NUM_IPV4ADDR_STR_BUFF;TI"NUM_IPV6ADDR_STR_BUFF;T{;I"NUM_IPV6ADDR_STR_BUFF;TI"NUM_MACADDR_STR_BUFF;T{;I"NUM_MACADDR_STR_BUFF;TI"TMO_IP4_FRAG_GET_NET_BUF;T{;I"TMO_IP4_FRAG_GET_NET_BUF;TI"TMO_IP6_FRAG_GET_NET_BUF;T{;I"TMO_IP6_FRAG_GET_NET_BUF;TI"TMO_PPP_GET_NET_BUF;T{;I"TMO_PPP_GET_NET_BUF;TI"TMO_ARP_GET_NET_BUF;T{;I"TMO_ARP_GET_NET_BUF;TI"TMO_TCP_GET_NET_BUF;T{;I"TMO_TCP_GET_NET_BUF;TI"TMO_TCP_OUTPUT;T{;I"TMO_TCP_OUTPUT;TI"TMO_UDP_OUTPUT;T{;I"TMO_UDP_OUTPUT;TI"TMO_ICMP_OUTPUT;T{;I"TMO_ICMP_OUTPUT;TI"TMO_IGMP_OUTPUT;T{;I"TMO_IGMP_OUTPUT;TI"TMO_ND6_NS_OUTPUT;T{;I"TMO_ND6_NS_OUTPUT;TI"TMO_ND6_NA_OUTPUT;T{;I"TMO_ND6_NA_OUTPUT;TI"TMO_ND6_RS_OUTPUT;T{;I"TMO_ND6_RS_OUTPUT;TI"TMO_ARP_OUTPUT;T{;I"TMO_ARP_OUTPUT;TI"TMO_ND6_RTR_SOL_DELAY;T{;I"TMO_ND6_RTR_SOL_DELAY;TI"TMO_ND6_RTR_SOL_INTERVAL;T{;I"TMO_ND6_RTR_SOL_INTERVAL;TI"TMO_IN_REDIRECT;T{;I"TMO_IN_REDIRECT;TI"TCP_OUT_TASK_STACK_SIZE;T{;I"TCP_OUT_TASK_STACK_SIZE;TI"UDP_OUT_TASK_STACK_SIZE;T{;I"UDP_OUT_TASK_STACK_SIZE;TI"PPP_INPUT_STACK_SIZE;T{;I"PPP_INPUT_STACK_SIZE;TI"PPP_OUTPUT_STACK_SIZE;T{;I"PPP_OUTPUT_STACK_SIZE;TI"ETHER_INPUT_STACK_SIZE;T{;I"ETHER_INPUT_STACK_SIZE;TI"ETHER_OUTPUT_STACK_SIZE;T{;I"ETHER_OUTPUT_STACK_SIZE;TI"LOOP_INPUT_STACK_SIZE;T{;I"LOOP_INPUT_STACK_SIZE;TI"LOOP_OUTPUT_STACK_SIZE;T{;I"LOOP_OUTPUT_STACK_SIZE;TI"NET_TIMER_STACK_SIZE;T{;I"NET_TIMER_STACK_SIZE;TI"TCP_OUT_TASK_PRIORITY;T{;I"TCP_OUT_TASK_PRIORITY;TI"UDP_OUT_TASK_PRIORITY;T{;I"UDP_OUT_TASK_PRIORITY;TI"PPP_INPUT_PRIORITY;T{;I"PPP_INPUT_PRIORITY;TI"PPP_OUTPUT_PRIORITY;T{;I"PPP_OUTPUT_PRIORITY;TI"ETHER_INPUT_PRIORITY;T{;I"ETHER_INPUT_PRIORITY;TI"ETHER_OUTPUT_PRIORITY;T{;I"ETHER_OUTPUT_PRIORITY;TI"LOOP_INPUT_PRIORITY;T{;I"LOOP_INPUT_PRIORITY;TI"LOOP_OUTPUT_PRIORITY;T{;I"LOOP_OUTPUT_PRIORITY;TI"NET_TIMER_PRIORITY;T{;I"NET_TIMER_PRIORITY;TI"NUM_DTQ_UDP_RCVQ;T{;I"NUM_DTQ_UDP_RCVQ;TI"NUM_DTQ_UDP_OUTPUT;T{;I"NUM_DTQ_UDP_OUTPUT;TI"NUM_DTQ_PPP_OUTPUT;T{;I"NUM_DTQ_PPP_OUTPUT;TI"NUM_DTQ_ETHER_OUTPUT;T{;I"NUM_DTQ_ETHER_OUTPUT;TI"NUM_DTQ_LOOP_INPUT;T{;I"NUM_DTQ_LOOP_INPUT;TI"NUM_DTQ_LOOP_OUTPUT;T{;I"NUM_DTQ_LOOP_OUTPUT;TI"TCP_REP_FLG_DYNAMIC;T{;I"TCP_REP_FLG_DYNAMIC;TI"TCP_REP_FLG_VALID;T{;I"TCP_REP_FLG_VALID;TI"TCP_CEP_FLG_IPV4;T{;I"TCP_CEP_FLG_IPV4;TI"TCP_CEP_FLG_ACK_NOW;T{;I"TCP_CEP_FLG_ACK_NOW;TI"TCP_CEP_FLG_DEL_ACK;T{;I"TCP_CEP_FLG_DEL_ACK;TI"TCP_CEP_FLG_SENT_FIN;T{;I"TCP_CEP_FLG_SENT_FIN;TI"TCP_CEP_FLG_NEED_SYN;T{;I"TCP_CEP_FLG_NEED_SYN;TI"TCP_CEP_FLG_NEED_FIN;T{;I"TCP_CEP_FLG_NEED_FIN;TI"TCP_CEP_FLG_FORCE;T{;I"TCP_CEP_FLG_FORCE;TI"TCP_CEP_FLG_NO_PUSH;T{;I"TCP_CEP_FLG_NO_PUSH;TI"TCP_CEP_FLG_NO_DELAY;T{;I"TCP_CEP_FLG_NO_DELAY;TI"TCP_CEP_FLG_FORCE_CLEAR;T{;I"TCP_CEP_FLG_FORCE_CLEAR;TI"TCP_CEP_FLG_POST_OUTPUT;T{;I"TCP_CEP_FLG_POST_OUTPUT;TI"TCP_CEP_FLG_RESERVE_OUTPUT;T{;I"TCP_CEP_FLG_RESERVE_OUTPUT;TI"TCP_CEP_FLG_DYNAMIC;T{;I"TCP_CEP_FLG_DYNAMIC;TI"TCP_CEP_FLG_VALID;T{;I"TCP_CEP_FLG_VALID;TI"#TCP_CEP_FLG_CLOSE_AFTER_OUTPUT;T{;I"#TCP_CEP_FLG_CLOSE_AFTER_OUTPUT;TI"$TCP_CEP_FLG_RESTORE_NEXT_OUTPUT;T{;I"$TCP_CEP_FLG_RESTORE_NEXT_OUTPUT;TI"TCP_CEP_FLG_WBCS_NBUF_REQ;T{;I"TCP_CEP_FLG_WBCS_NBUF_REQ;TI"TCP_CEP_FLG_WBCS_MASK;T{;I"TCP_CEP_FLG_WBCS_MASK;TI"TCP_CEP_FLG_WBCS_FREE;T{;I"TCP_CEP_FLG_WBCS_FREE;TI" TCP_CEP_FLG_WBCS_WOPEN_PEND;T{;I" TCP_CEP_FLG_WBCS_WOPEN_PEND;TI"TCP_CEP_FLG_WBCS_NBUF_PEND;T{;I"TCP_CEP_FLG_WBCS_NBUF_PEND;TI"TCP_CEP_FLG_WBCS_NBUF_RSVD;T{;I"TCP_CEP_FLG_WBCS_NBUF_RSVD;TI" TCP_CEP_FLG_WBCS_NBUF_READY;T{;I" TCP_CEP_FLG_WBCS_NBUF_READY;TI" TCP_CEP_FLG_WBCS_SEND_READY;T{;I" TCP_CEP_FLG_WBCS_SEND_READY;TI"TCP_CEP_FLG_WBCS_SENT;T{;I"TCP_CEP_FLG_WBCS_SENT;TI"TCP_CEP_FLG_WBCS_ACKED;T{;I"TCP_CEP_FLG_WBCS_ACKED;TI"TCP_CEP_FLG_NOT_CLEAR;T{;I"TCP_CEP_FLG_NOT_CLEAR;TI"TCP_CEP_EVT_ESTABLISHED;T{;I"TCP_CEP_EVT_ESTABLISHED;TI"TCP_CEP_EVT_CLOSED;T{;I"TCP_CEP_EVT_CLOSED;TI"TCP_CEP_EVT_SWBUF_READY;T{;I"TCP_CEP_EVT_SWBUF_READY;TI"TCP_CEP_EVT_RWBUF_READY;T{;I"TCP_CEP_EVT_RWBUF_READY;TI"TCP_CEP_EVT_ALL;T{;I"TCP_CEP_EVT_ALL;TI"EOBJ_NULL;T{;I"EOBJ_NULL;TI"EOBJ_LOCAL_NODE;T{;I"EOBJ_LOCAL_NODE;TI"EOBJ_SYNC_REMOTE_NODE;T{;I"EOBJ_SYNC_REMOTE_NODE;TI"EOBJ_ASYNC_REMOTE_NODE;T{;I"EOBJ_ASYNC_REMOTE_NODE;TI"EOBJ_DEVICE;T{;I"EOBJ_DEVICE;TI"EPC_NONE;T{;I"EPC_NONE;TI"EPC_RULE_SET;T{;I"EPC_RULE_SET;TI"EPC_RULE_GET;T{;I"EPC_RULE_GET;TI"EPC_RULE_ANNO;T{;I"EPC_RULE_ANNO;TI"EPC_ANNOUNCE;T{;I"EPC_ANNOUNCE;TI"EPC_VARIABLE;T{;I"EPC_VARIABLE;TI"EOJ_X1_SENSOR;T{;I"EOJ_X1_SENSOR;TI"EOJ_X1_AIR_CONDITIONER;T{;I"EOJ_X1_AIR_CONDITIONER;TI"EOJ_X1_AMENITY;T{;I"EOJ_X1_AMENITY;TI"EOJ_X1_HOUSEWORK;T{;I"EOJ_X1_HOUSEWORK;TI"EOJ_X1_WELLNESS;T{;I"EOJ_X1_WELLNESS;TI"EOJ_X1_CONTROLLER;T{;I"EOJ_X1_CONTROLLER;TI"EOJ_X1_AUDIO_VISUAL;T{;I"EOJ_X1_AUDIO_VISUAL;TI"EOJ_X1_PROFILE;T{;I"EOJ_X1_PROFILE;TI"EOJ_X1_USER_DEFINED;T{;I"EOJ_X1_USER_DEFINED;TI"EOJ_X2_NODE_PROFILE;T{;I"EOJ_X2_NODE_PROFILE;TI"USE_EXTERNAL_ID;T{;I"	true;T:	BOOLT:CONDITIONI"defined(USE_EXTERNAL_ID);TI"SIL_ENDIAN_BIG;T{;I"	true;T;T;I"defined(SIL_ENDIAN_BIG);TI"SIL_ENDIAN_LITTLE;T{;I"	true;T;T;I"defined(SIL_ENDIAN_LITTLE);TI"TA_NULL;T{;I"TA_NULL;TI"TA_ACT;T{;I"TA_ACT;TI"TA_NOACTQUE;T{;I"TA_NOACTQUE;TI"TA_TPRI;T{;I"TA_TPRI;TI"TA_WMUL;T{;I"TA_WMUL;TI"TA_CLR;T{;I"TA_CLR;TI"TA_CEILING;T{;I"TA_CEILING;TI"TA_STA;T{;I"TA_STA;TI"TA_NONKERNEL;T{;I"TA_NONKERNEL;TI"TA_ENAINT;T{;I"TA_ENAINT;TI"TA_EDGE;T{;I"TA_EDGE;TI"TNFY_HANDLER;T{;I"TNFY_HANDLER;TI"TNFY_SETVAR;T{;I"TNFY_SETVAR;TI"TNFY_INCVAR;T{;I"TNFY_INCVAR;TI"TNFY_ACTTSK;T{;I"TNFY_ACTTSK;TI"TNFY_WUPTSK;T{;I"TNFY_WUPTSK;TI"TNFY_SIGSEM;T{;I"TNFY_SIGSEM;TI"TNFY_SETFLG;T{;I"TNFY_SETFLG;TI"TNFY_SNDDTQ;T{;I"TNFY_SNDDTQ;TI"TENFY_SETVAR;T{;I"TENFY_SETVAR;TI"TENFY_INCVAR;T{;I"TENFY_INCVAR;TI"TENFY_ACTTSK;T{;I"TENFY_ACTTSK;TI"TENFY_WUPTSK;T{;I"TENFY_WUPTSK;TI"TENFY_SIGSEM;T{;I"TENFY_SIGSEM;TI"TENFY_SETFLG;T{;I"TENFY_SETFLG;TI"TENFY_SNDDTQ;T{;I"TENFY_SNDDTQ;TI"TMIN_TPRI;T{;I"TMIN_TPRI;T;TI"TMAX_TPRI;T{;I"TMAX_TPRI;T;TI"TMIN_DPRI;T{;I"TMIN_DPRI;T;TI"TMAX_DPRI;T{;I"TMAX_DPRI;T;TI"TMIN_ISRPRI;T{;I"TMIN_ISRPRI;T;TI"TMAX_ISRPRI;T{;I"TMAX_ISRPRI;T;TI"TBIT_FLGPTN;T{;I"TBIT_FLGPTN;TI"TMAX_MAXSEM;T{;I"TMAX_MAXSEM;TI"TMAX_RELTIM;T{;I"TMAX_RELTIM;TI"TMIN_INTPRI;T{;I"TMIN_INTPRI;T;TI"TMAX_INTPRI;T{;I"TMAX_INTPRI;T;TI"TMIN_TSKID;T{;I"TMIN_TSKID;T;TI"TMIN_SEMID;T{;I"TMIN_SEMID;T;TI"TMIN_FLGID;T{;I"TMIN_FLGID;T;TI"TMIN_DTQID;T{;I"TMIN_DTQID;T;TI"TMIN_PDQID;T{;I"TMIN_PDQID;T;TI"TMIN_MTXID;T{;I"TMIN_MTXID;T;TI"TMIN_MPFID;T{;I"TMIN_MPFID;T;TI"TMIN_CYCID;T{;I"TMIN_CYCID;T;TI"TMIN_ALMID;T{;I"TMIN_ALMID;T;TI"USE_TSKINICTXB;T{;I"	true;T;T;I"defined(USE_TSKINICTXB);TI"OMIT_INITIALIZE_INTERRUPT;T{;I"	true;T;T;I"'defined(OMIT_INITIALIZE_INTERRUPT);TI"USE_INHINIB_TABLE;T{;I"	true;T;T;I"defined(USE_INHINIB_TABLE);TI"USE_INTINIB_TABLE;T{;I"	true;T;T;I"defined(USE_INTINIB_TABLE);TI"OMIT_INITIALIZE_EXCEPTION;T{;I"	true;T;T;I"'defined(OMIT_INITIALIZE_EXCEPTION);TI"DEFAULT_ISTK;T{;I"DEFAULT_ISTK;T;I"defined(DEFAULT_ISTK);TI"TARGET_TSKATR;T{;I"TARGET_TSKATR;T;I"defined(TARGET_TSKATR);T:ELSE_EXPRI"0;TI"TARGET_INTATR;T{;I"TARGET_INTATR;T;I"defined(TARGET_INTATR);T;I"0;TI"TARGET_INHATR;T{;I"TARGET_INHATR;T;I"defined(TARGET_INHATR);T;I"0;TI"TARGET_ISRATR;T{;I"TARGET_ISRATR;T;I"defined(TARGET_ISRATR);T;I"0;TI"TARGET_EXCATR;T{;I"TARGET_EXCATR;T;I"defined(TARGET_EXCATR);T;I"0;TI"TARGET_MIN_STKSZ;T{;I"TARGET_MIN_STKSZ;T;I"defined(TARGET_MIN_STKSZ);T;I"1;TI"TARGET_MIN_ISTKSZ;T{;I"TARGET_MIN_ISTKSZ;T;I"defined(TARGET_MIN_ISTKSZ);T;I"1;TI"CHECK_STKSZ_ALIGN;T{;I"CHECK_STKSZ_ALIGN;T;I"defined(CHECK_STKSZ_ALIGN);T;I"1;TI"CHECK_INTPTR_ALIGN;T{;I"CHECK_INTPTR_ALIGN;T;I" defined(CHECK_INTPTR_ALIGN);T;I"1;TI"CHECK_INTPTR_NONNULL;T{;I"	true;T;T;I""defined(CHECK_INTPTR_NONNULL);TI"CHECK_FUNC_ALIGN;T{;I"CHECK_FUNC_ALIGN;T;I"defined(CHECK_FUNC_ALIGN);T;I"1;TI"CHECK_FUNC_NONNULL;T{;I"	true;T;T;I" defined(CHECK_FUNC_NONNULL);TI"CHECK_STACK_ALIGN;T{;I"CHECK_STACK_ALIGN;T;I"defined(CHECK_STACK_ALIGN);T;I"1;TI"CHECK_STACK_NONNULL;T{;I"	true;T;T;I"!defined(CHECK_STACK_NONNULL);TI"CHECK_MPF_ALIGN;T{;I"CHECK_MPF_ALIGN;T;I"defined(CHECK_MPF_ALIGN);T;I"1;TI"CHECK_MPF_NONNULL;T{;I"	true;T;T;I"defined(CHECK_MPF_NONNULL);TI"CHECK_MB_ALIGN;T{;I"CHECK_MB_ALIGN;T;I"defined(CHECK_MB_ALIGN);T;I"1;TI"sizeof_void_ptr;T{;I"sizeof(void*);TI"sizeof_uint_t;T{;I"sizeof(uint_t);TI"sizeof_size_t;T{;I"sizeof(size_t);TI"sizeof_intptr_t;T{;I"sizeof(intptr_t);TI"sizeof_ID;T{;I"sizeof(ID);TI"sizeof_FP;T{;I"sizeof(FP);TI"sizeof_INTNO;T{;I"sizeof(INTNO);TI"sizeof_INHNO;T{;I"sizeof(INHNO);TI"sizeof_EXCNO;T{;I"sizeof(EXCNO);TI"sizeof_TASK;T{;I"sizeof(TASK);TI"sizeof_TMEHDR;T{;I"sizeof(TMEHDR);TI"sizeof_ISR;T{;I"sizeof(ISR);TI"sizeof_INTHDR;T{;I"sizeof(INTHDR);TI"sizeof_EXCHDR;T{;I"sizeof(EXCHDR);TI"sizeof_INIRTN;T{;I"sizeof(INIRTN);TI"sizeof_TERRTN;T{;I"sizeof(TERRTN);TI"sizeof_NFYHDR;T{;I"sizeof(NFYHDR);TI"sizeof_TINIB;T{;I"sizeof(TINIB);TI"offsetof_TINIB_tskatr;T{;I"offsetof(TINIB,tskatr);TI"offsetof_TINIB_exinf;T{;I"offsetof(TINIB,exinf);TI"offsetof_TINIB_task;T{;I"offsetof(TINIB,task);TI"offsetof_TINIB_ipriority;T{;I"offsetof(TINIB,ipriority);TI"offsetof_TINIB_stksz;T{;I"offsetof(TINIB,stksz);T;I"!defined(USE_TSKINICTXB);TI"offsetof_TINIB_stk;T{;I"offsetof(TINIB,stk);T;I"!defined(USE_TSKINICTXB);TI"sizeof_SEMINIB;T{;I"sizeof(SEMINIB);TI"offsetof_SEMINIB_sematr;T{;I"offsetof(SEMINIB,sematr);TI"offsetof_SEMINIB_isemcnt;T{;I"offsetof(SEMINIB,isemcnt);TI"offsetof_SEMINIB_maxsem;T{;I"offsetof(SEMINIB,maxsem);TI"sizeof_FLGPTN;T{;I"sizeof(FLGPTN);TI"sizeof_FLGINIB;T{;I"sizeof(FLGINIB);TI"offsetof_FLGINIB_flgatr;T{;I"offsetof(FLGINIB,flgatr);TI"offsetof_FLGINIB_iflgptn;T{;I"offsetof(FLGINIB,iflgptn);TI"sizeof_DTQINIB;T{;I"sizeof(DTQINIB);TI"offsetof_DTQINIB_dtqatr;T{;I"offsetof(DTQINIB,dtqatr);TI"offsetof_DTQINIB_dtqcnt;T{;I"offsetof(DTQINIB,dtqcnt);TI"offsetof_DTQINIB_p_dtqmb;T{;I"offsetof(DTQINIB,p_dtqmb);TI"sizeof_PDQINIB;T{;I"sizeof(PDQINIB);TI"offsetof_PDQINIB_pdqatr;T{;I"offsetof(PDQINIB,pdqatr);TI"offsetof_PDQINIB_pdqcnt;T{;I"offsetof(PDQINIB,pdqcnt);TI"offsetof_PDQINIB_maxdpri;T{;I"offsetof(PDQINIB,maxdpri);TI"offsetof_PDQINIB_p_pdqmb;T{;I"offsetof(PDQINIB,p_pdqmb);TI"sizeof_MTXINIB;T{;I"sizeof(MTXINIB);TI"offsetof_MTXINIB_mtxatr;T{;I"offsetof(MTXINIB,mtxatr);TI"offsetof_MTXINIB_ceilpri;T{;I"offsetof(MTXINIB,ceilpri);TI"sizeof_MPFINIB;T{;I"sizeof(MPFINIB);TI"offsetof_MPFINIB_mpfatr;T{;I"offsetof(MPFINIB,mpfatr);TI"offsetof_MPFINIB_blkcnt;T{;I"offsetof(MPFINIB,blkcnt);TI"offsetof_MPFINIB_blksz;T{;I"offsetof(MPFINIB,blksz);TI"offsetof_MPFINIB_mpf;T{;I"offsetof(MPFINIB,mpf);TI"offsetof_MPFINIB_p_mpfmb;T{;I"offsetof(MPFINIB,p_mpfmb);TI"sizeof_CYCINIB;T{;I"sizeof(CYCINIB);TI"offsetof_CYCINIB_cycatr;T{;I"offsetof(CYCINIB,cycatr);TI"offsetof_CYCINIB_exinf;T{;I"offsetof(CYCINIB,exinf);TI"offsetof_CYCINIB_nfyhdr;T{;I"offsetof(CYCINIB,nfyhdr);TI"offsetof_CYCINIB_cyctim;T{;I"offsetof(CYCINIB,cyctim);TI"offsetof_CYCINIB_cycphs;T{;I"offsetof(CYCINIB,cycphs);TI"sizeof_ALMINIB;T{;I"sizeof(ALMINIB);TI"offsetof_ALMINIB_almatr;T{;I"offsetof(ALMINIB,almatr);TI"offsetof_ALMINIB_exinf;T{;I"offsetof(ALMINIB,exinf);TI"offsetof_ALMINIB_nfyhdr;T{;I"offsetof(ALMINIB,nfyhdr);TI"sizeof_ISRINIB;T{;I"sizeof(ISRINIB);TI"offsetof_ISRINIB_isratr;T{;I"offsetof(ISRINIB,isratr);TI"offsetof_ISRINIB_exinf;T{;I"offsetof(ISRINIB,exinf);TI"!offsetof_ISRINIB_p_isr_queue;T{;I""offsetof(ISRINIB,p_isr_queue);TI"offsetof_ISRINIB_isr;T{;I"offsetof(ISRINIB,isr);TI"offsetof_ISRINIB_isrpri;T{;I"offsetof(ISRINIB,isrpri);TI"sizeof_INHINIB;T{;I"sizeof(INHINIB);T;I"(!defined(OMIT_INITIALIZE_INTERRUPT);TI"offset_INHINIB_inhno;T{;I"offsetof(INHINIB,inhno);T;I"(!defined(OMIT_INITIALIZE_INTERRUPT);TI"offset_INHINIB_inhatr;T{;I"offsetof(INHINIB,inhatr);T;I"(!defined(OMIT_INITIALIZE_INTERRUPT);TI"offset_INHINIB_int_entry;T{;I" offsetof(INHINIB,int_entry);T;I"(!defined(OMIT_INITIALIZE_INTERRUPT);TI"sizeof_INTINIB;T{;I"sizeof(INTINIB);T;I"(!defined(OMIT_INITIALIZE_INTERRUPT);TI"offset_INTINIB_intno;T{;I"offsetof(INTINIB,intno);T;I"(!defined(OMIT_INITIALIZE_INTERRUPT);TI"offset_INTINIB_intatr;T{;I"offsetof(INTINIB,intatr);T;I"(!defined(OMIT_INITIALIZE_INTERRUPT);TI"offset_INTINIB_intpri;T{;I"offsetof(INTINIB,intpri);T;I"(!defined(OMIT_INITIALIZE_INTERRUPT);TI"sizeof_EXCINIB;T{;I"sizeof(EXCINIB);T;I"(!defined(OMIT_INITIALIZE_EXCEPTION);TI"offset_EXCINIB_excno;T{;I"offsetof(EXCINIB,excno);T;I"(!defined(OMIT_INITIALIZE_EXCEPTION);TI"offset_EXCINIB_excatr;T{;I"offsetof(EXCINIB,excatr);T;I"(!defined(OMIT_INITIALIZE_EXCEPTION);TI"offset_EXCINIB_exc_entry;T{;I" offsetof(EXCINIB,exc_entry);T;I"(!defined(OMIT_INITIALIZE_EXCEPTION);TI"TARGET_RZA1H;T{;I"	true;T;T;I"defined(TARGET_RZA1H);TI"TARGET_RZA1L;T{;I"	true;T;T;I"defined(TARGET_RZA1L);TI"TA_NEGEDGE;T{;I"TA_NEGEDGE;TI"TA_POSEDGE;T{;I"TA_POSEDGE;TI"TA_BOTHEDGE;T{;I"TA_BOTHEDGE;TI"INTNO_IRQ0;T{;I"INTNO_IRQ0;TI"INTNO_IRQ7;T{;I"INTNO_IRQ7;TI"TARGET_ARCH_ARM;T{;I"__TARGET_ARCH_ARM;TI"USE_INTCFG_TABLE;T{;I"	true;T;T;I"defined(USE_INTCFG_TABLE);TI"sizeof_TCB;T{;I"sizeof(TCB);TI"offsetof_TCB_p_tinib;T{;I"offsetof(TCB,p_tinib);TI"offsetof_TCB_sp;T{;I"offsetof(TCB,tskctxb.sp);TI"offsetof_TCB_pc;T{;I"offsetof(TCB,tskctxb.pc);TI"offsetof_T_EXCINF_cpsr;T{;I"offsetof(T_EXCINF,cpsr);T:cfgFileInfo[÷{;I"ATT_INI;T:_FILE_I"5../../asp3_dcre/arch/arm_gcc/rza1/chip_timer.cfg;T:_LINE_iI"iniatr;TI"TA_NULL;TI"
+exinf;TI"0;TI"inirtn;TI""_kernel_target_hrt_initialize;T:
+INDEXi{;I"ATT_TER;T;@ı;iI"teratr;TI"TA_NULL;TI"
+exinf;TI"0;TI"terrtn;TI"!_kernel_target_hrt_terminate;T;i{;I"CFG_INT;T;@ı;iI"
+intno;TI"INTNO_TIMER;TI"intatr;TI"TA_ENAINT|INTATR_TIMER;TI"intpri;TI"INTPRI_TIMER;T;i{;I"DEF_INH;T;@ı;iI"
+inhno;TI"INHNO_TIMER;TI"inhatr;TI"TA_NULL;TI"inthdr;TI"_kernel_target_hrt_handler;T;i	{:DIRECTIVEI""#ifdef TOPPERS_SUPPORT_OVRHDR;T{;I"ATT_INI;T;@ı;iI"iniatr;TI"TA_NULL;TI"
+exinf;TI"0;TI"inirtn;TI"'_kernel_target_ovrtimer_initialize;T;i
+{;I"ATT_TER;T;@ı;iI"teratr;TI"TA_NULL;TI"
+exinf;TI"0;TI"terrtn;TI"&_kernel_target_ovrtimer_terminate;T;i{;I"CFG_INT;T;@ı;iI"
+intno;TI"INTNO_OVRTIMER;TI"intatr;TI"TA_ENAINT|INTATR_OVRTIMER;TI"intpri;TI"INTPRI_OVRTIMER;T;i{;I"DEF_INH;T;@ı;iI"
+inhno;TI"INHNO_OVRTIMER;TI"inhatr;TI"TA_NULL;TI"inthdr;TI"$_kernel_target_ovrtimer_handler;T;i{; I"#endif;T{;I"CRE_TSK;T;I"./gen/tecsgen.cfg;T;iI"
+tskid;TI"TSKID_tTask_Task;TI"tskatr;TI"TA_ACT;TI"
+exinf;TI"&tTask_INIB_tab[0];TI"	task;TI"tTask_start;TI"itskpri;TI"10;TI"
+stksz;TI"	1024;TI"stk;TI"	NULL;T;i{;I"CRE_TSK;T;@:;iI"
+tskid;TI"TSKID_tTask_LogTask_Task;TI"tskatr;TI"TA_ACT;TI"
+exinf;TI"&tTask_INIB_tab[1];TI"	task;TI"tTask_start;TI"itskpri;TI"3;TI"
+stksz;TI"	1024;TI"stk;TI"	NULL;T;i{;I"CRE_SEM;T;@:;i	I"
+semid;TI"2SEMID_tSemaphore_SerialPort1_ReceiveSemaphore;TI"sematr;TI"TA_NULL;TI"isemcnt;TI"0;TI"maxsem;TI"1;T;i{;I"CRE_SEM;T;@:;i
+I"
+semid;TI"/SEMID_tSemaphore_SerialPort1_SendSemaphore;TI"sematr;TI"TA_NULL;TI"isemcnt;TI"1;TI"maxsem;TI"1;T;i{;I"ATT_INI;T;@:;iI"iniatr;TI"TA_NULL;TI"
+exinf;TI"	NULL;TI"inirtn;TI"tInitializeRoutine_start;T;i{;I"ATT_TER;T;@:;iI"teratr;TI"TA_NULL;TI"
+exinf;TI"#&tTerminateRoutine_INIB_tab[0];TI"terrtn;TI"tTerminateRoutine_start;T;i{;I"ATT_TER;T;@:;iI"teratr;TI"TA_NULL;TI"
+exinf;TI"#&tTerminateRoutine_INIB_tab[1];TI"terrtn;TI"tTerminateRoutine_start;T;i{;I"CRE_SEM;T;I"'../../asp3_dcre/mbed/mbed_stub.cfg;T;iI"
+semid;TI"SEM_MALLOC;TI"sematr;TI"TA_TPRI;TI"isemcnt;TI"1;TI"maxsem;TI"1;T;i{; I"#ifdef SUPPORT_ETHER;T{;I"CRE_TSK;T;I"5../../asp3_dcre/tinet/netdev/if_mbed/nic_asp.cfg;T;i7I"
+tskid;TI"IF_MBED_PHY_TASK;TI"tskatr;TI"TA_ACT;TI"
+exinf;TI"1;TI"	task;TI"if_mbed_phy_task;TI"itskpri;TI"IF_MBED_PHY_PRIORITY;TI"
+stksz;TI"IF_MBED_PHY_STACK_SIZE;TI"stk;TI"	NULL;T;i{;I"DEF_INH;T;@î;i;I"
+inhno;TI"INHNO_IF_MBED;TI"inhatr;TI"TA_NULL;TI"inthdr;TI"if_mbed_eth_handler;T;i{;I"CFG_INT;T;@î;i<I"
+intno;TI"INTNO_IF_MBED;TI"intatr;TI"INTATR_IF_MBED;TI"intpri;TI"INTPRI_IF_MBED;T;i{;I"CRE_SEM;T;@î;i@I"
+semid;TI"SEM_IF_MBED_SBUF_READY;TI"sematr;TI"TA_TPRI;TI"isemcnt;TI"NUM_IF_MBED_TXBUF;TI"maxsem;TI"NUM_IF_MBED_TXBUF;T;i{;I"CRE_SEM;T;@î;iAI"
+semid;TI"SEM_IF_MBED_RBUF_READY;TI"sematr;TI"TA_TPRI;TI"isemcnt;TI"0;TI"maxsem;TI"NUM_IF_MBED_RXBUF;T;i{; I"#endif;T{;I"CRE_TSK;T;I"&../../asp3_dcre/tinet/net/net.cfg;T;i/I"
+tskid;TI"NET_TIMER_TASK;TI"tskatr;TI"TA_HLNG;TI"
+exinf;TI"0;TI"	task;TI"net_timer_task;TI"itskpri;TI"NET_TIMER_PRIORITY;TI"
+stksz;TI"NET_TIMER_STACK_SIZE;TI"stk;TI"	NULL;T;i{;I"CRE_CYC;T;@À;i8I"
+cycid;TI"NET_TIMER_HANDLER;TI"cycatr;TI"TA_STA;TI"nfymode;TI"TNFY_HANDLER;TI"	par1;TI"0;TI"	par2;TI"net_timer_handler;TI"cyctim;TI"NET_TIMER_CYCLE;TI"cycphs;TI"1;T;i{;I"CRE_SEM;T;@À;iAI"
+semid;TI"SEM_CALL_OUT_LOCK;TI"sematr;TI"TA_TPRI;TI"isemcnt;TI"1;TI"maxsem;TI"1;T;i{;I"CRE_SEM;T;@À;iBI"
+semid;TI"SEM_CALL_OUT_TIMEOUT;TI"sematr;TI"TA_TPRI;TI"isemcnt;TI"0;TI"maxsem;TI"NUM_NET_CALLOUT;T;i{;I"CRE_SEM;T;@À;iFI"
+semid;TI"SEM_IP2STR_BUFF_LOCK;TI"sematr;TI"TA_TPRI;TI"isemcnt;TI"1;TI"maxsem;TI"1;T;i{; I"#ifndef NOUSE_MPF_NET_BUF;T{; I"B#if defined(NUM_MPF_NET_BUF_CSEG) && NUM_MPF_NET_BUF_CSEG > 0;T{;I"CRE_MPF;T;I"*../../asp3_dcre/tinet/net/net_asp.cfg;T;i8I"
+mpfid;TI"MPF_NET_BUF_CSEG;TI"mpfatr;TI"TA_TFIFO;TI"blkcnt;TI"NUM_MPF_NET_BUF_CSEG;TI"
+blksz;TI"sizeof(T_NET_BUF_CSEG);TI"mpf;TI"	NULL;TI"
+mpfmb;TI"	NULL;T;i {; I"#endif;T{; I">#if defined(NUM_MPF_NET_BUF_64) && NUM_MPF_NET_BUF_64 > 0;T{;I"CRE_MPF;T;@;iBI"
+mpfid;TI"MPF_NET_BUF_64;TI"mpfatr;TI"TA_TFIFO;TI"blkcnt;TI"NUM_MPF_NET_BUF_64;TI"
+blksz;TI"sizeof(T_NET_BUF_64);TI"mpf;TI"	NULL;TI"
+mpfmb;TI"	NULL;T;i!{; I"#endif;T{; I"@#if defined(NUM_MPF_NET_BUF_128) && NUM_MPF_NET_BUF_128 > 0;T{;I"CRE_MPF;T;@;iKI"
+mpfid;TI"MPF_NET_BUF_128;TI"mpfatr;TI"TA_TFIFO;TI"blkcnt;TI"NUM_MPF_NET_BUF_128;TI"
+blksz;TI"sizeof(T_NET_BUF_128);TI"mpf;TI"	NULL;TI"
+mpfmb;TI"	NULL;T;i"{; I"#endif;T{; I"@#if defined(NUM_MPF_NET_BUF_256) && NUM_MPF_NET_BUF_256 > 0;T{;I"CRE_MPF;T;@;iUI"
+mpfid;TI"MPF_NET_BUF_256;TI"mpfatr;TI"TA_TFIFO;TI"blkcnt;TI"NUM_MPF_NET_BUF_256;TI"
+blksz;TI"sizeof(T_NET_BUF_256);TI"mpf;TI"	NULL;TI"
+mpfmb;TI"	NULL;T;i#{; I"#endif;T{; I"@#if defined(NUM_MPF_NET_BUF_512) && NUM_MPF_NET_BUF_512 > 0;T{;I"CRE_MPF;T;@;i_I"
+mpfid;TI"MPF_NET_BUF_512;TI"mpfatr;TI"TA_TFIFO;TI"blkcnt;TI"NUM_MPF_NET_BUF_512;TI"
+blksz;TI"sizeof(T_NET_BUF_512);TI"mpf;TI"	NULL;TI"
+mpfmb;TI"	NULL;T;i${; I"#endif;T{; I"F#if defined(NUM_MPF_NET_BUF_IP_MSS) && NUM_MPF_NET_BUF_IP_MSS > 0;T{;I"CRE_MPF;T;@;iiI"
+mpfid;TI"MPF_NET_BUF_IP_MSS;TI"mpfatr;TI"TA_TFIFO;TI"blkcnt;TI"NUM_MPF_NET_BUF_IP_MSS;TI"
+blksz;TI"sizeof(T_NET_BUF_IP_MSS);TI"mpf;TI"	NULL;TI"
+mpfmb;TI"	NULL;T;i%{; I"#endif;T{; I"B#if defined(NUM_MPF_NET_BUF_1024) && NUM_MPF_NET_BUF_1024 > 0;T{;I"CRE_MPF;T;@;isI"
+mpfid;TI"MPF_NET_BUF_1024;TI"mpfatr;TI"TA_TFIFO;TI"blkcnt;TI"NUM_MPF_NET_BUF_1024;TI"
+blksz;TI"sizeof(T_NET_BUF_1024);TI"mpf;TI"	NULL;TI"
+mpfmb;TI"	NULL;T;i&{; I"#endif;T{; I"L#if defined(NUM_MPF_NET_BUF_IPV6_MMTU) && NUM_MPF_NET_BUF_IPV6_MMTU > 0;T{;I"CRE_MPF;T;@;i}I"
+mpfid;TI"MPF_NET_BUF_IPV6_MMTU;TI"mpfatr;TI"TA_TFIFO;TI"blkcnt;TI"NUM_MPF_NET_BUF_IPV6_MMTU;TI"
+blksz;TI" sizeof(T_NET_BUF_IPV6_MMTU);TI"mpf;TI"	NULL;TI"
+mpfmb;TI"	NULL;T;i'{; I"#endif;T{; I"F#if defined(NUM_MPF_NET_BUF_IF_PDU) && NUM_MPF_NET_BUF_IF_PDU > 0;T{;I"CRE_MPF;T;@;iÇI"
+mpfid;TI"MPF_NET_BUF_IF_PDU;TI"mpfatr;TI"TA_TFIFO;TI"blkcnt;TI"NUM_MPF_NET_BUF_IF_PDU;TI"
+blksz;TI"sizeof(T_NET_BUF_IF_PDU);TI"mpf;TI"	NULL;TI"
+mpfmb;TI"	NULL;T;i({; I"#endif;T{; I"H#if defined(NUM_MPF_NET_BUF6_REASSM) && NUM_MPF_NET_BUF6_REASSM > 0;T{;I"CRE_MPF;T;@;içI"
+mpfid;TI"MPF_NET_BUF_REASSM;TI"mpfatr;TI"TA_TFIFO;TI"blkcnt;TI"NUM_MPF_NET_BUF6_REASSM;TI"
+blksz;TI"sizeof(T_NET_BUF6_REASSM);TI"mpf;TI"	NULL;TI"
+mpfmb;TI"	NULL;T;i){; I"
+#else;T{; I"H#if defined(NUM_MPF_NET_BUF4_REASSM) && NUM_MPF_NET_BUF4_REASSM > 0;T{;I"CRE_MPF;T;@;iôI"
+mpfid;TI"MPF_NET_BUF_REASSM;TI"mpfatr;TI"TA_TFIFO;TI"blkcnt;TI"NUM_MPF_NET_BUF4_REASSM;TI"
+blksz;TI"sizeof(T_NET_BUF4_REASSM);TI"mpf;TI"	NULL;TI"
+mpfmb;TI"	NULL;T;i*{; I"#endif;T{; I"#endif;T{; I"F#if defined(NUM_MPF_NET_BUF6_65536) && NUM_MPF_NET_BUF6_65536 > 0;T{;I"CRE_MPF;T;@;i•I"
+mpfid;TI"MPF_NET_BUF6_65536;TI"mpfatr;TI"TA_TFIFO;TI"blkcnt;TI"NUM_MPF_NET_BUF6_65536;TI"
+blksz;TI"sizeof(T_NET_BUF6_65536);TI"mpf;TI"	NULL;TI"
+mpfmb;TI"	NULL;T;i+{; I"#endif;T{; I"#endif;T{; I"#ifdef SUPPORT_ETHER;T{;I"CRE_TSK;T;I"+../../asp3_dcre/tinet/net/ethernet.cfg;T;i-I"
+tskid;TI"ETHER_OUTPUT_TASK;TI"tskatr;TI"TA_HLNG;TI"
+exinf;TI"0;TI"	task;TI"ether_output_task;TI"itskpri;TI"ETHER_OUTPUT_PRIORITY;TI"
+stksz;TI"ETHER_OUTPUT_STACK_SIZE;TI"stk;TI"	NULL;T;i,{;I"CRE_TSK;T;@Î;i.I"
+tskid;TI"ETHER_INPUT_TASK;TI"tskatr;TI"TA_HLNG|TA_ACT;TI"
+exinf;TI"0;TI"	task;TI"ether_input_task;TI"itskpri;TI"ETHER_INPUT_PRIORITY;TI"
+stksz;TI"ETHER_INPUT_STACK_SIZE;TI"stk;TI"	NULL;T;i-{;I"CRE_DTQ;T;@Î;i0I"
+dtqid;TI"DTQ_ETHER_OUTPUT;TI"dtqatr;TI"TA_TFIFO;TI"dtqcnt;TI"NUM_DTQ_ETHER_OUTPUT;TI"
+dtqmb;TI"	NULL;T;i.{;I"CRE_SEM;T;@Î;i4I"
+semid;TI"SEM_MAC2STR_BUFF_LOCK;TI"sematr;TI"TA_TPRI;TI"isemcnt;TI"1;TI"maxsem;TI"1;T;i/{; I"#endif;T{; I"4#if defined(_IP4_CFG) && defined(SUPPORT_ETHER);T{;I"CRE_SEM;T;I"/../../asp3_dcre/tinet/netinet/if_ether.cfg;T;i/I"
+semid;TI"SEM_ARP_CACHE_LOCK;TI"sematr;TI"TA_TPRI;TI"isemcnt;TI"1;TI"maxsem;TI"1;T;i0{; I"#endif;T{; I"#if defined(_IP4_CFG);T{; I"#ifdef IP4_CFG_FRAGMENT;T{;I"CRE_SEM;T;I")../../asp3_dcre/tinet/netinet/ip.cfg;T;i1I"
+semid;TI"SEM_IP4_FRAG_QUEUE;TI"sematr;TI"TA_TPRI;TI"isemcnt;TI"1;TI"maxsem;TI"1;T;i1{; I"#endif;T{; I")#if NUM_IN4_REDIRECT_ROUTE_ENTRY > 0;T{;I"CRE_SEM;T;@5;i9I"
+semid;TI"SEM_IN4_ROUTING_TBL;TI"sematr;TI"TA_TPRI;TI"isemcnt;TI"1;TI"maxsem;TI"1;T;i2{; I"#endif;T{; I"#endif;T{; I"3#if defined(_IP4_CFG) && defined(SUPPORT_IGMP);T{;I"CRE_SEM;T;I".../../asp3_dcre/tinet/netinet/ip_igmp.cfg;T;i/I"
+semid;TI"SEM_IGMP_GROUP_LOCK;TI"sematr;TI"TA_TPRI;TI"isemcnt;TI"1;TI"maxsem;TI"1;T;i3{; I"#endif;T{; I"#ifdef SUPPORT_TCP;T{;I"CRE_TSK;T;I"*../../asp3_dcre/tinet/netinet/tcp.cfg;T;i/I"
+tskid;TI"TCP_OUTPUT_TASK;TI"tskatr;TI"TA_HLNG;TI"
+exinf;TI"0;TI"	task;TI"tcp_output_task;TI"itskpri;TI"TCP_OUT_TASK_PRIORITY;TI"
+stksz;TI"TCP_OUT_TASK_STACK_SIZE;TI"stk;TI"	NULL;T;i4{;I"CRE_SEM;T;@c;i:I"
+semid;TI"SEM_TCP_POST_OUTPUT;TI"sematr;TI"TA_TPRI;TI"isemcnt;TI"0;TI"maxsem;TI"1;T;i5{;I"CRE_SEM;T;@c;i;I"
+semid;TI"SEM_TCP_CEP;TI"sematr;TI"TA_TPRI;TI"isemcnt;TI"1;TI"maxsem;TI"1;T;i6{; I"#ifdef TCP_CFG_TRACE;T{;I"CRE_SEM;T;@c;i>I"
+semid;TI"SEM_TCP_TRACE;TI"sematr;TI"TA_TPRI;TI"isemcnt;TI"1;TI"maxsem;TI"1;T;i7{; I"#endif;T{; I"#endif;T{; I"#ifdef SUPPORT_UDP;T{; I" #ifdef UDP_CFG_NON_BLOCKING;T{;I"CRE_TSK;T;I"*../../asp3_dcre/tinet/netinet/udp.cfg;T;i3I"
+tskid;TI"UDP_OUTPUT_TASK;TI"tskatr;TI"TA_HLNG;TI"
+exinf;TI"0;TI"	task;TI"udp_output_task;TI"itskpri;TI"UDP_OUT_TASK_PRIORITY;TI"
+stksz;TI"UDP_OUT_TASK_STACK_SIZE;TI"stk;TI"	NULL;T;i8{;I"CRE_SEM;T;@ú;i>I"
+semid;TI"SEM_UDP_POST_OUTPUT;TI"sematr;TI"TA_TPRI;TI"isemcnt;TI"0;TI"maxsem;TI"1;T;i9{; I"#endif;T{;I"CRE_SEM;T;@ú;iBI"
+semid;TI"SEM_UDP_CEP;TI"sematr;TI"TA_TPRI;TI"isemcnt;TI"1;TI"maxsem;TI"1;T;i:{; I"#endif;T{; I"#ifdef _IP6_CFG;T{;I"CRE_SEM;T;I"+../../asp3_dcre/tinet/netinet6/ip6.cfg;T;i/I"
+semid;TI"SEM_ND6_CACHE;TI"sematr;TI"TA_TPRI;TI"isemcnt;TI"1;TI"maxsem;TI"1;T;i;{; I""#if NUM_ND6_DEF_RTR_ENTRY > 0;T{;I"CRE_SEM;T;@«;i5I"
+semid;TI"SEM_ND6_DEFRTRLIST;TI"sematr;TI"TA_TPRI;TI"isemcnt;TI"1;TI"maxsem;TI"1;T;i<{; I"#endif;T{; I"#ifdef IP6_CFG_FRAGMENT;T{;I"CRE_SEM;T;@«;i=I"
+semid;TI"SEM_IP6_FRAG_QUEUE;TI"sematr;TI"TA_TPRI;TI"isemcnt;TI"1;TI"maxsem;TI"1;T;i={; I"#endif;T{; I" #if NUM_IN6_ROUTE_ENTRY > 0;T{;I"CRE_SEM;T;@«;iEI"
+semid;TI"SEM_IN6_ROUTING_TBL;TI"sematr;TI"TA_TPRI;TI"isemcnt;TI"1;TI"maxsem;TI"1;T;i>{; I"#endif;T{; I"#endif;T{; I"#ifdef SUPPORT_INET4;T{
+;I"VRID_TCP_REP;T;I"%../../ntshell/src/tinet_main.cfg;T;i5I"vrid_tcp4_repid;TI"USR_TCP_REP1;T;i?{
+;I"VRID_TCP_REP;T;@ 	;i6I"vrid_tcp4_repid;TI"USR_TCP_REP2;T;i@{
+;I"VRID_TCP_REP;T;@ 	;i7I"vrid_tcp4_repid;TI"USR_TCP_REP3;T;iA{
+;I"VRID_TCP_REP;T;@ 	;i8I"vrid_tcp4_repid;TI"USR_TCP_REP4;T;iB{
+;I"VRID_TCP_CEP;T;@ 	;i:I"vrid_tcp4_cepid;TI"USR_TCP_CEP1;T;iC{
+;I"VRID_TCP_CEP;T;@ 	;i;I"vrid_tcp4_cepid;TI"USR_TCP_CEP2;T;iD{
+;I"VRID_TCP_CEP;T;@ 	;i<I"vrid_tcp4_cepid;TI"USR_TCP_CEP3;T;iE{
+;I"VRID_TCP_CEP;T;@ 	;i=I"vrid_tcp4_cepid;TI"USR_TCP_CEP4;T;iF{; I"#ifndef TOPPERS_GRSAKURA;T{
+;I"VRID_TCP_CEP;T;@ 	;i?I"vrid_tcp4_cepid;TI"USR_TCP_CEP5;T;iG{
+;I"VRID_TCP_CEP;T;@ 	;i@I"vrid_tcp4_cepid;TI"USR_TCP_CEP6;T;iH{
+;I"VRID_TCP_CEP;T;@ 	;iAI"vrid_tcp4_cepid;TI"USR_TCP_CEP7;T;iI{
+;I"VRID_TCP_CEP;T;@ 	;iBI"vrid_tcp4_cepid;TI"USR_TCP_CEP8;T;iJ{; I"#endif;T{
+;I"VRID_UDP_CEP;T;@ 	;iEI"vrid_udp4_cepid;TI"USR_UDP_CEP1;T;iK{
+;I"VRID_UDP_CEP;T;@ 	;iFI"vrid_udp4_cepid;TI"USR_UDP_CEP2;T;iL{
+;I"VRID_UDP_CEP;T;@ 	;iGI"vrid_udp4_cepid;TI"USR_UDP_CEP3;T;iM{
+;I"VRID_UDP_CEP;T;@ 	;iHI"vrid_udp4_cepid;TI"USR_UDP_CEP4;T;iN{; I"#endif;T{; I"#ifdef SUPPORT_INET6;T{
+;I"VRID_TCP6_REP;T;@ 	;iNI"vrid_tcp6_repid;TI"USR_TCP6_REP1;T;iO{
+;I"VRID_TCP6_REP;T;@ 	;iOI"vrid_tcp6_repid;TI"USR_TCP6_REP2;T;iP{
+;I"VRID_TCP6_REP;T;@ 	;iPI"vrid_tcp6_repid;TI"USR_TCP6_REP3;T;iQ{
+;I"VRID_TCP6_REP;T;@ 	;iQI"vrid_tcp6_repid;TI"USR_TCP6_REP4;T;iR{
+;I"VRID_TCP6_CEP;T;@ 	;iSI"vrid_tcp6_cepid;TI"USR_TCP6_CEP1;T;iS{
+;I"VRID_TCP6_CEP;T;@ 	;iTI"vrid_tcp6_cepid;TI"USR_TCP6_CEP2;T;iT{
+;I"VRID_TCP6_CEP;T;@ 	;iUI"vrid_tcp6_cepid;TI"USR_TCP6_CEP3;T;iU{
+;I"VRID_TCP6_CEP;T;@ 	;iVI"vrid_tcp6_cepid;TI"USR_TCP6_CEP4;T;iV{; I"#ifndef TOPPERS_GRSAKURA;T{
+;I"VRID_TCP6_CEP;T;@ 	;iXI"vrid_tcp6_cepid;TI"USR_TCP6_CEP5;T;iW{
+;I"VRID_TCP6_CEP;T;@ 	;iYI"vrid_tcp6_cepid;TI"USR_TCP6_CEP6;T;iX{
+;I"VRID_TCP6_CEP;T;@ 	;iZI"vrid_tcp6_cepid;TI"USR_TCP6_CEP7;T;iY{
+;I"VRID_TCP6_CEP;T;@ 	;i[I"vrid_tcp6_cepid;TI"USR_TCP6_CEP8;T;iZ{; I"#endif;T{
+;I"VRID_UDP6_CEP;T;@ 	;i^I"vrid_udp6_cepid;TI"USR_UDP6_CEP1;T;i[{
+;I"VRID_UDP6_CEP;T;@ 	;i_I"vrid_udp6_cepid;TI"USR_UDP6_CEP2;T;i\{
+;I"VRID_UDP6_CEP;T;@ 	;i`I"vrid_udp6_cepid;TI"USR_UDP6_CEP3;T;i]{
+;I"VRID_UDP6_CEP;T;@ 	;iaI"vrid_udp6_cepid;TI"USR_UDP6_CEP4;T;i^{; I"#endif;T{; I"#ifdef DHCP4_CLI_CFG;T{;I"UDP_CRE_CEP;T;I"5../../asp3_dcre/tinet/netapp/tinet_dhcp4_cli.cfg;T;i0I"udp4_cepid;TI"UDP4_DHCP_CLI_CEPID;TI"udp4_cepatr;TI"0;TI"ipv4addr;TI"IPV4_ADDRANY;TI"portno;TI"DHCP4_CLI_CFG_PORTNO;TI"callback;TI"callback_nblk_dhcp4_cli;T;i_{; I"#endif;T{; I"#ifdef USE_RESOLVER;T{;I"CRE_MPF;T;I"2../../asp3_dcre/tinet/netapp/resolver_asp.cfg;T;i3I"
+mpfid;TI"MPF_RSLV_SRBUF;TI"mpfatr;TI"TA_TFIFO;TI"blkcnt;TI"NUM_MPF_RSLV_SRBUF;TI"
+blksz;TI"DNS_UDP_MSG_LENGTH;TI"mpf;TI"	NULL;TI"
+mpfmb;TI"	NULL;T;i`{; I"#endif;T{; I"#ifdef USE_RESOLVER;T{; I"#ifdef SUPPORT_INET6;T{;I"UDP6_CRE_CEP;T;I"4../../asp3_dcre/tinet/netapp/tinet_resolver.cfg;T;i2I"udp6_cepid;TI"UDP6_RESOLVER_CEPID;TI"udp6_cepatr;TI"0;TI"ipv6addr;TI"IPV6_ADDRANY;TI"portno;TI"UDP_PORTANY;TI"callback;TI"	NULL;T;ia{; I"#endif;T{; I"#ifdef SUPPORT_INET4;T{;I"UDP_CRE_CEP;T;@∑	;i<I"udp4_cepid;TI"UDP4_RESOLVER_CEPID;TI"udp4_cepatr;TI"0;TI"ipv4addr;TI"IPV4_ADDRANY;TI"portno;TI"UDP_PORTANY;TI"callback;TI"	NULL;T;ib{; I"#endif;T{; I"#endif;T{;I"UDP_CRE_CEP;T;I"(../../ntshell/src/tinet_ntp_cli.cfg;T;i.I"udp4_cepid;TI"NTP_CLI_CEPID;TI"udp4_cepatr;TI"0;TI"ipv4addr;TI"IPV4_ADDRANY;TI"portno;TI"UDP_PORTANY;TI"callback;TI"callback_nblk_ntp_cli;T;ic{;I"CRE_SEM;T;I"#../../ntshell/src/net_misc.cfg;T;i1I"
+semid;TI"SEM_DHCP4_CLI_LOCK;TI"sematr;TI"TA_TPRI;TI"isemcnt;TI"1;TI"maxsem;TI"1;T;id{;I"CRE_MPF;T;@Â	;i5I"
+mpfid;TI"MPF_DHCP4_CLI_MSG;TI"mpfatr;TI"TA_TFIFO;TI"blkcnt;TI"NUM_MPF_DHCP4_CLI_MSG;TI"
+blksz;TI"sizeof(T_DHCP4_CLI_MSG);TI"mpf;TI"	NULL;TI"
+mpfmb;TI"	NULL;T;ie{;I"CRE_TSK;T;@Â	;i?I"
+tskid;TI"NET_MISC_TASK;TI"tskatr;TI"TA_HLNG|TA_ACT;TI"
+exinf;TI"0;TI"	task;TI"net_misc_task;TI"itskpri;TI"NET_MISC_MAIN_PRIORITY;TI"
+stksz;TI"NET_MISC_STACK_SIZE;TI"stk;TI"	NULL;T;if{;I"CRE_TSK;T;I"#../../ntshell/fatfs/ffarch.cfg;T;i-I"
+tskid;TI"FFARCH_TASK;TI"tskatr;TI"TA_NULL;TI"
+exinf;TI"0;TI"	task;TI"ffarch_task;TI"itskpri;TI"FFARCH_PRIORITY;TI"
+stksz;TI"FFARCH_STACK_SIZE;TI"stk;TI"	NULL;T;ig{;I"CRE_CYC;T;@
+;i.I"
+cycid;TI"SDFS_CYC;TI"cycatr;TI"TA_NULL;TI"nfymode;TI"TNFY_HANDLER;TI"	par1;TI"0;TI"	par2;TI"sdfs_cychdr;TI"cyctim;TI"1000000;TI"cycphs;TI"0;T;ih{;I"CRE_SEM;T;@
+;i0I"
+semid;TI"SEM_FILESYSTEM;TI"sematr;TI"TA_TPRI;TI"isemcnt;TI"1;TI"maxsem;TI"1;T;ii{; I"#ifdef IF_ETHER_BTUSB;T{;I"DEF_INH;T;I"0../../asp3_dcre/../usbhost/src/usb_hbth.cfg;T;iI"
+inhno;TI"INHNO_USB;TI"inhatr;TI"TA_NULL;TI"inthdr;TI"usb_interrupt_handler;T;ij{;I"CFG_INT;T;@;
+;iI"
+intno;TI"INTNO_USB;TI"intatr;TI"INTATR_USB;TI"intpri;TI"INTPRI_USB;T;ik{;I"CRE_TSK;T;@;
+;iI"
+tskid;TI"USBHOST_TASK;TI"tskatr;TI"TA_FPU;TI"
+exinf;TI"0;TI"	task;TI"usbhost_main;TI"itskpri;TI"USBHOST_PRIORITY;TI"
+stksz;TI"USBHOST_STACK_SIZE;TI"stk;TI"	NULL;T;il{; I"#endif;T{;I"ATT_INI;T;I"'../../ntshell/src/ntshell_main.cfg;T;i0I"iniatr;TI"TA_NULL;TI"
+exinf;TI"0;TI"inirtn;TI"sys_init;T;im{;I"CRE_TSK;T;@^
+;i2I"
+tskid;TI"NTSHELL_TASK;TI"tskatr;TI"TA_FPU;TI"
+exinf;TI"0;TI"	task;TI"ntshell_task;TI"itskpri;TI"NTSHELL_PRIORITY;TI"
+stksz;TI"NTSHELL_STACK_SIZE;TI"stk;TI"	NULL;T;in{;I"CRE_FLG;T;@^
+;i3I"
+flgid;TI"FLG_SELECT_WAIT;TI"flgatr;TI"TA_WMUL;TI"iflgptn;TI"	0x00;T;io{;I"CRE_SEM;T;@^
+;i4I"
+semid;TI"SEM_FILEDESC;TI"sematr;TI"TA_TPRI;TI"isemcnt;TI"1;TI"maxsem;TI"1;T;ip{; I"#ifndef ECHONET_USE_MALLOC;T{;I"CRE_MPF;T;I"*../../ntshell/echonet/echonet_asp.cfg;T;i6I"
+mpfid;TI"ECHONET_MEMPOOL;TI"mpfatr;TI"TA_TFIFO;TI"blkcnt;TI"NUM_ECHONET_MEMPOOL_BLOCK;TI"
+blksz;TI"256;TI"mpf;TI"	NULL;TI"
+mpfmb;TI"	NULL;T;iq{; I"#endif;T{;I"CRE_DTQ;T;@ã
+;i<I"
+dtqid;TI"ECHONET_API_DATAQUEUE;TI"dtqatr;TI"TA_TFIFO;TI"dtqcnt;TI" ECHONET_API_DATAQUEUE_COUNT;TI"
+dtqmb;TI"	NULL;T;ir{;I"CRE_DTQ;T;@ã
+;iAI"
+dtqid;TI"ECHONET_SVC_DATAQUEUE;TI"dtqatr;TI"TA_TFIFO;TI"dtqcnt;TI" ECHONET_SVC_DATAQUEUE_COUNT;TI"
+dtqmb;TI"	NULL;T;is{;I"CRE_TSK;T;@ã
+;iFI"
+tskid;TI"ECHONET_SVC_TASK;TI"tskatr;TI"TA_HLNG;TI"
+exinf;TI"0;TI"	task;TI"echonet_task;TI"itskpri;TI"ECHONET_TASK_PRIORITY;TI"
+stksz;TI"ECHONET_TASK_STACK_SIZE;TI"stk;TI"	NULL;T;it{;I"CRE_DTQ;T;@ã
+;iKI"
+dtqid;TI"ECHONET_UDP_DATAQUEUE;TI"dtqatr;TI"TA_TFIFO;TI"dtqcnt;TI" ECHONET_UDP_DATAQUEUE_COUNT;TI"
+dtqmb;TI"	NULL;T;iu{;I"CRE_TSK;T;@ã
+;iPI"
+tskid;TI"ECHONET_UDP_TASK;TI"tskatr;TI"TA_HLNG;TI"
+exinf;TI"0;TI"	task;TI"echonet_udp_task;TI"itskpri;TI"ECHONET_UDP_TASK_PRIORITY;TI"
+stksz;TI" ECHONET_UDP_TASK_STACK_SIZE;TI"stk;TI"	NULL;T;iv{; I"#ifdef SUPPORT_INET4;T{;I"UDP_CRE_CEP;T;I"*../../ntshell/echonet/echonet_udp.cfg;T;i5I"udp4_cepid;TI"ECHONET_UDP_CEPID;TI"udp4_cepatr;TI"TA_ACT;TI"ipv4addr;TI"IPV4_ADDRANY;TI"portno;TI"	3610;TI"callback;TI"(FP)callback_nblk_udp;T;iw{; I"#endif;T{; I"#ifdef SUPPORT_INET6;T{;I"UDP6_CRE_CEP;T;@‹
+;i;I"udp6_cepid;TI"ECHONET_UDP6_CEPID;TI"udp6_cepatr;TI"TA_NULL;TI"ipv6addr;TI"IPV6_ADDRANY;TI"portno;TI"	3610;TI"callback;TI"(FP)callback_nblk_udp;T;ix{; I"#endif;T{;I"ECN_CRE_EOBJ;T;I"../src/echonet_main.cfg;T;iI"eobjid;TI"LOCAL_NODE_EOBJ;TI"eobjatr;TI"EOBJ_LOCAL_NODE;TI"enodid;TI"EOBJ_NULL;TI"
+exinf;TI"0;TI"
+eojx1;TI"EOJ_X1_PROFILE;TI"
+eojx2;TI"EOJ_X2_NODE_PROFILE;TI"
+eojx3;TI"EOJ_X3_NODE_PROFILE;T;iy{;I"ECN_DEF_EPRP;T;@˚
+;iI"eobjid;TI"LOCAL_NODE_EOBJ;TI"eprpcd;TI"	0x80;TI"eprpatr;TI" EPC_RULE_SET | EPC_RULE_GET;TI"eprpsz;TI"1;TI"
+exinf;TI"0(intptr_t)&local_node_data.operation_status;TI"eprpset;TI""(EPRP_SETTER *)onoff_prop_set;TI"eprpget;TI"%(EPRP_GETTER *)ecn_data_prop_get;T;iz{;I"ECN_DEF_EPRP;T;@˚
+;iI"eobjid;TI"LOCAL_NODE_EOBJ;TI"eprpcd;TI"	0x8A;TI"eprpatr;TI"EPC_RULE_GET;TI"eprpsz;TI"3;TI"
+exinf;TI"1(intptr_t)&local_node_data.manufacturer_code;TI"eprpset;TI"%(EPRP_SETTER *)ecn_data_prop_set;TI"eprpget;TI"%(EPRP_GETTER *)ecn_data_prop_get;T;i{{;I"ECN_DEF_EPRP;T;@˚
+;iI"eobjid;TI"LOCAL_NODE_EOBJ;TI"eprpcd;TI"	0x82;TI"eprpatr;TI"EPC_RULE_GET;TI"eprpsz;TI"4;TI"
+exinf;TI"3(intptr_t)&local_node_data.version_information;TI"eprpset;TI"%(EPRP_SETTER *)ecn_data_prop_set;TI"eprpget;TI"%(EPRP_GETTER *)ecn_data_prop_get;T;i|{;I"ECN_DEF_EPRP;T;@˚
+;iI"eobjid;TI"LOCAL_NODE_EOBJ;TI"eprpcd;TI"	0x83;TI"eprpatr;TI"EPC_RULE_GET;TI"eprpsz;TI"17;TI"
+exinf;TI"5(intptr_t)&local_node_data.identification_number;TI"eprpset;TI"%(EPRP_SETTER *)ecn_data_prop_set;TI"eprpget;TI"%(EPRP_GETTER *)ecn_data_prop_get;T;i}{;I"ECN_CRE_EOBJ;T;@˚
+;iI"eobjid;TI" GENERAL_LIGHTING_CLASS_EOBJ;TI"eobjatr;TI"EOBJ_DEVICE;TI"enodid;TI"LOCAL_NODE_EOBJ;TI"
+exinf;TI"0;TI"
+eojx1;TI"EOJ_X1_AMENITY;TI"
+eojx2;TI""EOJ_X2_GENERAL_LIGHTING_CLASS;TI"
+eojx3;TI""EOJ_X3_GENERAL_LIGHTING_CLASS;T;i~{;I"ECN_DEF_EPRP;T;@˚
+;i!I"eobjid;TI" GENERAL_LIGHTING_CLASS_EOBJ;TI"eprpcd;TI"	0x80;TI"eprpatr;TI"/EPC_RULE_SET | EPC_RULE_GET | EPC_ANNOUNCE;TI"eprpsz;TI"1;TI"
+exinf;TI"<(intptr_t)&general_lighting_class_data.operation_status;TI"eprpset;TI""(EPRP_SETTER *)onoff_prop_set;TI"eprpget;TI"%(EPRP_GETTER *)ecn_data_prop_get;T;i{;I"ECN_DEF_EPRP;T;@˚
+;i#I"eobjid;TI" GENERAL_LIGHTING_CLASS_EOBJ;TI"eprpcd;TI"	0xB6;TI"eprpatr;TI" EPC_RULE_SET | EPC_RULE_GET;TI"eprpsz;TI"1;TI"
+exinf;TI"A(intptr_t)&general_lighting_class_data.lighting_mode_setting;TI"eprpset;TI"2(EPRP_SETTER *)lighting_mode_setting_prop_set;TI"eprpget;TI"%(EPRP_GETTER *)ecn_data_prop_get;T;i{{;I"ECN_DEF_EPRP;T;@˚
+;i%I"eobjid;TI" GENERAL_LIGHTING_CLASS_EOBJ;TI"eprpcd;TI"	0x81;TI"eprpatr;TI"/EPC_RULE_SET | EPC_RULE_GET | EPC_ANNOUNCE;TI"eprpsz;TI"1;TI"
+exinf;TI"A(intptr_t)&general_lighting_class_data.installation_location;TI"eprpset;TI"%(EPRP_SETTER *)ecn_data_prop_set;TI"eprpget;TI"%(EPRP_GETTER *)ecn_data_prop_get;T;i|{;I"ECN_DEF_EPRP;T;@˚
+;i'I"eobjid;TI" GENERAL_LIGHTING_CLASS_EOBJ;TI"eprpcd;TI"	0x82;TI"eprpatr;TI"EPC_RULE_GET;TI"eprpsz;TI"4;TI"
+exinf;TI"H(intptr_t)&general_lighting_class_data.standard_version_information;TI"eprpset;TI"%(EPRP_SETTER *)ecn_data_prop_set;TI"eprpget;TI"%(EPRP_GETTER *)ecn_data_prop_get;T;i}{;I"ECN_DEF_EPRP;T;@˚
+;i)I"eobjid;TI" GENERAL_LIGHTING_CLASS_EOBJ;TI"eprpcd;TI"	0x88;TI"eprpatr;TI" EPC_RULE_GET | EPC_ANNOUNCE;TI"eprpsz;TI"1;TI"
+exinf;TI"8(intptr_t)&general_lighting_class_data.fault_status;TI"eprpset;TI""(EPRP_SETTER *)alarm_prop_set;TI"eprpget;TI"%(EPRP_GETTER *)ecn_data_prop_get;T;i~{;I"ECN_DEF_EPRP;T;@˚
+;i+I"eobjid;TI" GENERAL_LIGHTING_CLASS_EOBJ;TI"eprpcd;TI"	0x8A;TI"eprpatr;TI"EPC_RULE_GET;TI"eprpsz;TI"3;TI"
+exinf;TI"=(intptr_t)&general_lighting_class_data.manufacturer_code;TI"eprpset;TI"%(EPRP_SETTER *)ecn_data_prop_set;TI"eprpget;TI"%(EPRP_GETTER *)ecn_data_prop_get;T;i{;I"CRE_TSK;T;I"../src/main.cfg;T;i[I"
+tskid;TI"MAIN_TASK;TI"tskatr;TI"TA_NULL;TI"
+exinf;TI"0;TI"	task;TI"main_task;TI"itskpri;TI"MAIN_PRIORITY;TI"
+stksz;TI"MAIN_STACK_SIZE;TI"stk;TI"	NULL;T;iÄ{;I"CRE_DTQ;T;@º;i\I"
+dtqid;TI"MAIN_DATAQUEUE;TI"dtqatr;TI"TA_TFIFO;TI"dtqcnt;TI"NUM_MAIN_DATAQUEUE;TI"
+dtqmb;TI"	NULL;T;iÅ:includeFiles[9I""target_timer.h";TI""main.h";TI"<tinet_config.h>;TI"<net/net_endian.h>;TI"<netinet/in.h>;TI"<netinet/in_itron.h>;TI"<tinet_nic_defs.h>;TI"<netinet/in_var.h>;TI"<net/ethernet.h>;TI"<net/if6_var.h>;TI"<echonet.h>;TI""tTask_tecsgen.h";TI"#"tInitializeRoutine_tecsgen.h";TI"""tTerminateRoutine_tecsgen.h";TI""target_sil.h";TI"<itron.h>;TI"<tinet_defs.h>;TI"<tinet_config.h>;TI"<net/if.h>;TI"<net/if_ppp.h>;TI"<net/if_loop.h>;TI"<net/ethernet.h>;TI"<net/if_arp.h>;TI"<net/net.h>;TI"<net/net_endian.h>;TI"<net/net_buf.h>;TI"<net/net_timer.h>;TI"<net/ppp_var.h>;TI"<net/ether_var.h>;TI"<netinet/in.h>;TI"<netinet/in_var.h>;TI"<netinet/ip.h>;TI"<netinet/ip_var.h>;TI"<netinet/tcp.h>;TI"<netinet/tcp_var.h>;TI"<netinet/udp_var.h>;TI""device.h";TI""tinet_target_config.h";TI""main.h";TI""netapp/dhcp4_cli.h";TI""netapp/resolver.h";TI""ntp_cli.h";TI""net_misc.h";TI""ffarch.h";TI""usb_hbth.h";TI""ntshell_main.h";TI""main.h";TI""echonet.h";TI""echonet_main.h";TI""echonet_task.h";TI""echonet_lcl_task.h";TI""echonet_lcl_task.h";T:domainId{I"TDOM_KERNEL;Ti˙I"TDOM_NONE;Ti˘

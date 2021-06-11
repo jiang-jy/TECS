@@ -1,0 +1,32 @@
+signature sGasHeatPumpTypeCommercialAirConditioner(indoorUnit) {
+    void getThermoStatus_Yes( );
+    void getThermoStatus_No( );
+    void getOperationModeStatusDuringAutoOperation_Other( );
+    void getOperationModeStatusDuringAutoOperation_Cooling( );
+    void getOperationModeStatusDuringAutoOperation_Heating( );
+    void getOperationModeStatusDuringAutoOperation_Dehumidification( );
+    void getOperationModeStatusDuringAutoOperation_AirCirculation( );
+    void setOperationModeSetting_Automatic( );
+    void setOperationModeSetting_Cooling( );
+    void setOperationModeSetting_Heating( );
+    void setOperationModeSetting_Dehumidification( );
+    void setOperationModeSetting_AirCirculation( );
+    void getOperationModeSetting_Automatic( );
+    void getOperationModeSetting_Cooling( );
+    void getOperationModeSetting_Heating( );
+    void getOperationModeSetting_Dehumidification( );
+    void getOperationModeSetting_AirCirculation( );
+    void setTemperatureSettingValue( );
+    void getTemperatureSettingValue( );
+    void setOperatingStatus_ON( );
+    void getOperatingStatus_ON( );
+    void setOperatingStatus_OFF( );
+    void getOperatingStatus_OFF( );
+    void setFaultStatus_Fault( );
+    void getFaultStatus_Fault( );
+    void setFaultStatus_NoFault( );
+    void getFaultStatus_NoFault( );
+};
+celltype tGasHeatPumpTypeCommercialAirConditioner(indoorUnit) {
+    entry sGasHeatPumpTypeCommercialAirConditioner(indoorUnit) eGasHeatPumpTypeCommercialAirConditioner(indoorUnit);
+};

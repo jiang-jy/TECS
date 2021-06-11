@@ -1,0 +1,32 @@
+signature sPackageTypeCommercialAirConditioner(indoorUnit)(exceptThoseForFacilities) {
+    void getThermostatState_Yes( );
+    void getThermostatState_No( );
+    void getCurrentFunction(automaticOperationMode)_Other( );
+    void getCurrentFunction(automaticOperationMode)_Cooling( );
+    void getCurrentFunction(automaticOperationMode)_Heating( );
+    void getCurrentFunction(automaticOperationMode)_Dehumidification( );
+    void getCurrentFunction(automaticOperationMode)_AirCirculation( );
+    void setOperationModeSetting_Automatic( );
+    void setOperationModeSetting_Cooling( );
+    void setOperationModeSetting_Heating( );
+    void setOperationModeSetting_Dehumidification( );
+    void setOperationModeSetting_AirCirculation( );
+    void getOperationModeSetting_Automatic( );
+    void getOperationModeSetting_Cooling( );
+    void getOperationModeSetting_Heating( );
+    void getOperationModeSetting_Dehumidification( );
+    void getOperationModeSetting_AirCirculation( );
+    void setTemperatureSetting( );
+    void getTemperatureSetting( );
+    void setOperatingStatus_ON( );
+    void getOperatingStatus_ON( );
+    void setOperatingStatus_OFF( );
+    void getOperatingStatus_OFF( );
+    void setFaultStatus_Fault( );
+    void getFaultStatus_Fault( );
+    void setFaultStatus_NoFault( );
+    void getFaultStatus_NoFault( );
+};
+celltype tPackageTypeCommercialAirConditioner(indoorUnit)(exceptThoseForFacilities) {
+    entry sPackageTypeCommercialAirConditioner(indoorUnit)(exceptThoseForFacilities) ePackageTypeCommercialAirConditioner(indoorUnit)(exceptThoseForFacilities);
+};

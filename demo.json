@@ -1,0 +1,26 @@
+{
+	"definitions":{
+		"state_ON-OFF-3031":{
+            "type":"state",
+            "size":1,
+            "enum":[
+                {"edt":"0x30", "state":{"ja":"入", "en":"ON"}},
+                {"edt":"0x31", "state":{"ja":"切", "en":"OFF"}}
+            ]
+        }
+	},
+	"devices":{
+"0x0EF0":{
+    "validRelease":{"from":"A","to":"latest"},
+    "className":{"ja":"ノードプロファイル", "en":"Node profile"},
+    "elProperties":{
+        "0x80":{
+            "validRelease":{"from":"A", "to":"latest"},
+            "propertyName":{"ja":"動作状態", "en":"Operating status"},
+            "accessRule":{"get":"required", "set":"optional", "inf":"required"},
+            "data":{ "$ref":"#/definitions/state_ON-OFF-3031" }
+        		}
+    		}
+    	}
+	}
+}

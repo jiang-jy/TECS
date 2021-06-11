@@ -1,0 +1,21 @@
+signature sInstantaneousWaterHeater {
+    void getHotWaterHeatingStatus_Yes( );
+    void getHotWaterHeatingStatus_No( );
+    void getBathWaterHeaterStatus_Yes( );
+    void getBathWaterHeaterStatus_No( );
+    void setBathAutoModeSetting_On( );
+    void setBathAutoModeSetting_Off( );
+    void getBathAutoModeSetting_On( );
+    void getBathAutoModeSetting_Off( );
+    void setOperatingStatus_ON( );
+    void getOperatingStatus_ON( );
+    void setOperatingStatus_OFF( );
+    void getOperatingStatus_OFF( );
+    void setFaultStatus_Fault( );
+    void getFaultStatus_Fault( );
+    void setFaultStatus_NoFault( );
+    void getFaultStatus_NoFault( );
+};
+celltype tInstantaneousWaterHeater {
+    entry sInstantaneousWaterHeater eInstantaneousWaterHeater;
+};

@@ -1,0 +1,17 @@
+signature sElectricHeater {
+    void setSetTemperatureValue( );
+    void setSetTemperatureValue_Undefined( );
+    void getSetTemperatureValue( );
+    void getSetTemperatureValue_Undefined( );
+    void setOperatingStatus_ON( );
+    void getOperatingStatus_ON( );
+    void setOperatingStatus_OFF( );
+    void getOperatingStatus_OFF( );
+    void setFaultStatus_Fault( );
+    void getFaultStatus_Fault( );
+    void setFaultStatus_NoFault( );
+    void getFaultStatus_NoFault( );
+};
+celltype tElectricHeater {
+    entry sElectricHeater eElectricHeater;
+};

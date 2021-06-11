@@ -1,0 +1,20 @@
+signature sHighVoltageSmartElectricEnergyMeter {
+    void getMonthlyMaximumElectricPowerDemand( );
+    void getNumberOfEffectiveDigitsOfElectricPowerDemand( );
+    void getCoefficient( );
+    void getFixedDate( );
+    void setDayForWhichTheHistoricalDataOfMeasuredCumulativeAmountsOfElectricEnergyIsToBeRetrieved( );
+    void getDayForWhichTheHistoricalDataOfMeasuredCumulativeAmountsOfElectricEnergyIsToBeRetrieved( );
+    void getNumberOfEffectiveDigitsForCumulativeAmountOfActiveElectricEnergy( );
+    void setOperatingStatus_ON( );
+    void getOperatingStatus_ON( );
+    void setOperatingStatus_OFF( );
+    void getOperatingStatus_OFF( );
+    void setFaultStatus_Fault( );
+    void getFaultStatus_Fault( );
+    void setFaultStatus_NoFault( );
+    void getFaultStatus_NoFault( );
+};
+celltype tHighVoltageSmartElectricEnergyMeter {
+    entry sHighVoltageSmartElectricEnergyMeter eHighVoltageSmartElectricEnergyMeter;
+};

@@ -1,0 +1,34 @@
+signature sEvCharger {
+    void getRatedChargeCapacity( );
+    void getChargerDischargerType_AcCplt( );
+    void getChargerDischargerType_AcHlcCharge( );
+    void getChargerDischargerType_DcAaCharge( );
+    void getChargerDischargerType_DcBbCharge( );
+    void getChargerDischargerType_DcEeCharge( );
+    void getChargerDischargerType_DcFfCharge( );
+    void setVehicleConnectionConfirmation_ConnectionConfirmation( );
+    void getChargeableCapacityOfVehicleMountedBattery( );
+    void getRemainingChargeableCapacityOfVehicleMountedBattery( );
+    void getUsedCapacityOfVehicleMountedBattery1( );
+    void setOperationModeSetting_Charge( );
+    void setOperationModeSetting_Standby( );
+    void setOperationModeSetting_Idle( );
+    void setOperationModeSetting_Other( );
+    void getOperationModeSetting_Charge( );
+    void getOperationModeSetting_Standby( );
+    void getOperationModeSetting_Idle( );
+    void getOperationModeSetting_Other( );
+    void getRemainingStoredElectricityOfVehicleMountedBattery1( );
+    void getRemainingStoredElectricityOfVehicleMountedBattery3( );
+    void setOperatingStatus_ON( );
+    void getOperatingStatus_ON( );
+    void setOperatingStatus_OFF( );
+    void getOperatingStatus_OFF( );
+    void setFaultStatus_Fault( );
+    void getFaultStatus_Fault( );
+    void setFaultStatus_NoFault( );
+    void getFaultStatus_NoFault( );
+};
+celltype tEvCharger {
+    entry sEvCharger eEvCharger;
+};

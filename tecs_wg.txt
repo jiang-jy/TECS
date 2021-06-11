@@ -1,0 +1,103 @@
+2021/04/12
+
+{"edt":"0x41", "state":{"ja":"電球色", "en":"Incandescent lamp color"}}
+{"edt":"0x42", "state":{"ja":"白色", "en":"White"}}
+↓
+"Incandescent lamp color"
+↓
+case 0x41:
+    sLight_IncandescentLampColor();
+case 0x42;
+    sLight_White();
+
+
+"propertyName":{"ja":"光色設定", "en":"Light color setting"},
+"data":{
+    {"edt":"0x41", "state":{"ja":"電球色", "en":"Incandescent lamp color"}}
+    {"edt":"0x42", "state":{"ja":"白色", "en":"White"}}
+↓
+関数名を作成："Incandescent lamp color"→SetIncandescentLampColor
+関数名を作成："White"→SetWhite
+↓
+void LightColorSetting_prop_set(const EPRPINIB *item, ...)
+{
+switch(){
+case 0x41:
+    cLight_SetIncandescentLampColor();
+    break;
+case 0x42;
+    cLight_SetWhite();
+    break;
+default:
+    break;
+}
+
+
+2021/05/17
+関数：
+void propertyName_prop_set()
+{
+    cClassName_stateName()
+}
+
+CDL: /json_parse/gen
+signature sClassName{
+    void setPropertyName_stateName();
+};
+
+コンフィギュレーションファイル：
+echonet_main.cfg　main.cfg
+    asp3_dcre/cfg/pass1.rb --> cfg1_out.c (static apiと番号を作る)
+    asp3_dcre/cfg/pass2.rb --> kernel_cfg.c　kernel_cfg.h（タスク関数管理）
+    ntshell/echonet/echonet.trb --> echonet_cfg.c  echonet_cfg.h　(プロパティを配列にする)
+
+cfgで呼び出す関数名ルールを決める (echonet.trbを書き換え？)
+    例：(EPRP_SETTER *)onoff_prop_set(){
+        eLighting_on(){};
+        eLighting_off(){};
+    }
+
+    分ける場合：
+        (EPRP_SETTER *)on_prop_set　(EPRP_SETTER *)off_prop_set  
+        (EPRP_SETTER *)on_prop_get (EPRP_SETTER *)off_prop_get
+
+    cfg: operatingStatus_prop_set()
+    .c 
+    operatingStatus_prop_set(){ 
+    case: 0x30
+    eLighting_on();
+    case: 0x31
+    eLighting_off();
+    }
+
+cfgを生成する
+cfgで呼び出す関数⇒ sGeneralLightingを呼び出すセルタイプを生成する...
+セルタイプを定義する CDL を生成する
+このセルタイプのセルタイプコード (C言語) を生成する
+    eClassName_stateName() {};
+
+json->plugin->echonet_main.cfg(プロパティを書き込む),echonet_main.c(関数名（cfgに定義しておく）を生成した、tecs呼び口関数を書き入れ)
+    
+echonet_main.cfg-cfg->echonet_cfg.c(コンフィギュレータ)
+
+json->CDL(get関数を追加する)->tDevices.c (tecsgen)
+
+singleton(呼び口関数名)
+--------------------------------
+新しいcfgファイルを作る場合
+    echonetオブジェクトを定義するフォーマットが変わったら、コンフィギュレータから読み込み時pass1とpass2はどうする
+prop_set prop_getの関数名を変える時　
+/echonet_app_config.h
+#define ECN_USER_DATA_PROP_SET
+#define ECN_USER_DATA_PROP_GET
+
+一般照明のサンプルプログラム
+
+WSLでmrubyビルド,sudo apt install gcc-arm-none-eabi
+2021/05/30
+cfg的生成器先生成nodeprofile的部分，再遍历其他的设备名字
+2021/06/01
+todo: cdl 里面只生成required, 判断条件改为get是否是renquired
+2021/06/10
+todo: 再cdl中添加onoff和alarm,在echonet_main.c中添加onoff和alarm函数
+2021/06/21

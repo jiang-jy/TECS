@@ -1,0 +1,24 @@
+/* echonet_cfg.h */
+#ifndef TOPPERS_ECHONET_CFG_H
+#define TOPPERS_ECHONET_CFG_H
+
+#include "echonet_app_config.h"
+
+#define TNUM_ENODID	1
+
+#define TNUM_EOBJID	2
+
+#define LOCAL_NODE_EOBJ	1
+#define GENERAL_LIGHTING_CLASS_EOBJ	2
+
+#define TNUM_LOCAL_NODE_EOBJ_EPRPNO	12
+#define TNUM_GENERAL_LIGHTING_CLASS_EOBJ_EPRPNO	9
+
+#define TNUM_LOCAL_NODE_EOBJ_EOBJNO	1
+
+#ifndef TNUM_ENODADR
+#define TNUM_ENODADR 100
+#endif
+
+#endif /* TOPPERS_ECHONET_CFG_H */
+

@@ -1,0 +1,20 @@
+signature sExtendedLightingSystem {
+    void setSceneControlSetting( );
+    void getSceneControlSetting( );
+    void getNumberThatCanAssignSceneControlSetting( );
+    void getPowerConsumptionWhenFullyLighted( );
+    void getPossiblePowerSavings( );
+    void setPowerConsumptionLimitSetting( );
+    void getPowerConsumptionLimitSetting( );
+    void setOperatingStatus_ON( );
+    void getOperatingStatus_ON( );
+    void setOperatingStatus_OFF( );
+    void getOperatingStatus_OFF( );
+    void setFaultStatus_Fault( );
+    void getFaultStatus_Fault( );
+    void setFaultStatus_NoFault( );
+    void getFaultStatus_NoFault( );
+};
+celltype tExtendedLightingSystem {
+    entry sExtendedLightingSystem eExtendedLightingSystem;
+};

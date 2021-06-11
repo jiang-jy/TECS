@@ -1,0 +1,23 @@
+signature sElectricStorageHeater {
+    void getHeatStorageOperationStatus_On( );
+    void getHeatStorageOperationStatus_Off( );
+    void setHeatStorageTemperatureSetting( );
+    void getHeatStorageTemperatureSetting( );
+    void getMeasuredStoredHeatTemperature( );
+    void getMidnightPowerDurationSetting( );
+    void setMidnightPowerStartTimeSetting( );
+    void getMidnightPowerStartTimeSetting( );
+    void getRadiationMethod_Yes( );
+    void getRadiationMethod_No( );
+    void setOperatingStatus_ON( );
+    void getOperatingStatus_ON( );
+    void setOperatingStatus_OFF( );
+    void getOperatingStatus_OFF( );
+    void setFaultStatus_Fault( );
+    void getFaultStatus_Fault( );
+    void setFaultStatus_NoFault( );
+    void getFaultStatus_NoFault( );
+};
+celltype tElectricStorageHeater {
+    entry sElectricStorageHeater eElectricStorageHeater;
+};

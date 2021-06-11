@@ -1,0 +1,23 @@
+signature sPassageSensor {
+    void getPassageDetectionDirection_NoPassage( );
+    void getPassageDetectionDirection_N( );
+    void getPassageDetectionDirection_Ne( );
+    void getPassageDetectionDirection_E( );
+    void getPassageDetectionDirection_Se( );
+    void getPassageDetectionDirection_S( );
+    void getPassageDetectionDirection_Sw( );
+    void getPassageDetectionDirection_W( );
+    void getPassageDetectionDirection_Nw( );
+    void getPassageDetectionDirection_DirectionUnknown( );
+    void setOperatingStatus_ON( );
+    void getOperatingStatus_ON( );
+    void setOperatingStatus_OFF( );
+    void getOperatingStatus_OFF( );
+    void setFaultStatus_Fault( );
+    void getFaultStatus_Fault( );
+    void setFaultStatus_NoFault( );
+    void getFaultStatus_NoFault( );
+};
+celltype tPassageSensor {
+    entry sPassageSensor ePassageSensor;
+};
